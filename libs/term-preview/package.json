@@ -1,0 +1,36 @@
+{
+  "name": "@digigov/docusaurus-term-preview",
+  "version": "0.2.0",
+  "description": "Term preview component with tooltip",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "postel": "^0.1.4",
+    "rc-tooltip": "^5.0.2",
+    "rollup": "^2.38.5"
+  },
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "peerDependencies": {
+    "@docusaurus/core": "^2.0.0-alpha.70",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.13",
+    "@babel/preset-env": "^7.12.13",
+    "@babel/preset-react": "^7.12.13",
+    "@rollup/plugin-babel": "^5.2.3",
+    "@rollup/plugin-commonjs": "^17.1.0",
+    "@rollup/plugin-node-resolve": "^11.1.1",
+    "@rollup/plugin-replace": "^2.3.4",
+    "postcss": "^8.2.6",
+    "rollup-plugin-import-css": "^2.0.0",
+    "rollup-plugin-postcss": "^4.0.0"
+  },
+  "gitHead": "c903a46306f77f55ad7fc4d2e274006f39a6c871"
+}
