@@ -1,0 +1,9 @@
+{
+  "name": "@digigov/docusaurus-terminology",
+  "version": "0.3.0",
+  "description": "Docusaurus plugin for managing terminologies",
+  "main": "index.js",
+  "author": "GRNET Developers <devs@lists.grnet.gr>",
+  "license": "MIT",
+  "private": false
+}

@@ -1,5 +1,5 @@
 const parseMD = require('parse-md').default;
-const store = require('../../docusaurus/terminology/store.js');
+const store = require('@digigov/docusaurus-terminology/store.js');
 const path = require('path');
 const importStatement = `
 
@@ -15,7 +15,7 @@ module.exports = function (source) {
 
   <Glossary />
 
-  `
+  `;
 
   return source;
-}
+};

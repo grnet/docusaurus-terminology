@@ -1,5 +1,5 @@
 {
-  "name": "@digigov/docs-glossary-loader",
+  "name": "@digigov/webpack-terms-replace-loader",
   "version": "0.0.1",
   "main": "index.js",
   "license": "MIT",
