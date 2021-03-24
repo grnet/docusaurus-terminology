@@ -17,8 +17,8 @@
   },
   "peerDependencies": {
     "@docusaurus/core": "^2.0.0-alpha.70",
-    "react": "^16.8.4",
-    "react-dom": "^16.8.4"
+    "react": "16.14.0",
+    "react-dom": "16.14.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.13",
