@@ -5,5 +5,8 @@
   "main": "index.js",
   "author": "GRNET Developers <devs@lists.grnet.gr>",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "scripts": {
+    "build": ""
+  }
 }
