@@ -1,5 +1,4 @@
-import React, { useEffect, useState, useMemo } from 'react';
-import { Fragment } from 'react';
+import React, { useEffect, useState } from 'react';
 import BrowserOnly from '@docusaurus/BrowserOnly';
 
 const Glossary = (props) => {

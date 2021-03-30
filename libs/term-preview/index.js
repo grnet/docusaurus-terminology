@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import Postel from 'postel';
-import { Fragment } from 'react';
 import BrowserOnly from '@docusaurus/BrowserOnly';
 import RcTooltip from 'rc-tooltip';
 import 'rc-tooltip/assets/bootstrap_white.css';

@@ -8,5 +8,8 @@
   "dependencies": {
     "@digigov/docusaurus-terminology": "^0.3.0",
     "parse-md": "2.0.4"
+  },
+  "scripts": {
+    "build": ""
   }
 }

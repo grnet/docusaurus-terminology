@@ -7,7 +7,7 @@ module.exports = function (context, options) {
     .replace(/^\.\//, '')
     .replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
   const glossaryRegex = new RegExp(`${formattedGlossaryPath}`);
-  const GlossaryPlugin = require('../../webpack/glossary-plugin/index.js');
+  const GlossaryPlugin = require('@digigov/webpack-glossary-plugin');
 
   return {
     name: 'terminology-docusaurus-plugin',
@@ -29,7 +29,7 @@ module.exports = function (context, options) {
               enforce: 'pre',
               use: [
                 {
-                  loader: require.resolve('../../webpack/glossary-loader/index.js'),
+                  loader: require.resolve('@digigov/webpack-glossary-loader'),
                   options
                 }
               ]
@@ -38,7 +38,7 @@ module.exports = function (context, options) {
               enforce: 'pre',
               use: [
                 {
-                  loader: require.resolve('../../webpack/terms-replace-loader/index.js'),
+                  loader: require.resolve('@digigov/webpack-terms-replace-loader'),
                   options
                 }
               ]
@@ -48,7 +48,7 @@ module.exports = function (context, options) {
               enforce: 'pre',
               use: [
                 {
-                  loader: require.resolve('../../webpack/terms-loader/index.js'),
+                  loader: require.resolve('@digigov/webpack-terms-loader'),
                   options
                 }
               ]
