@@ -1,5 +1,5 @@
 const parseMD = require('parse-md').default;
-const store = require('@digigov/docusaurus-terminology/store.js');
+const store = require('@digigov/terminology-store');
 const path = require('path');
 const importStatement = `
 

@@ -10,7 +10,8 @@
     "@digigov/webpack-glossary-plugin": "0.3.0",
     "@digigov/webpack-glossary-loader": "0.3.0",
     "@digigov/webpack-terms-loader": "0.0.1",
-    "@digigov/webpack-terms-replace-loader": "0.0.1"
+    "@digigov/webpack-terms-replace-loader": "0.0.1",
+    "@digigov/terminology-store": "~0.3.0"
   },
   "scripts": {
     "build": ""

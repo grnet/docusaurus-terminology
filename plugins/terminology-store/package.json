@@ -1,0 +1,11 @@
+{
+  "name": "@digigov/terminology-store",
+  "version": "0.3.0",
+  "description": "Terminology store for webpack loader & other plugins",
+  "main": "index.js",
+  "author": "GRNET Developers <devs@lists.grnet.gr>",
+  "license": "MIT",
+  "scripts": {
+    "build": ""
+  }
+}

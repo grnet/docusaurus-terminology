@@ -6,7 +6,7 @@
   "author": "GRNET Developers <devs@lists.grnet.gr>",
   "license": "MIT",
   "dependencies": {
-    "@digigov/docusaurus-terminology": "^0.3.0",
+    "@digigov/terminology-store": "^0.3.0",
     "parse-md": "2.0.4"
   },
   "scripts": {

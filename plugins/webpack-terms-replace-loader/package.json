@@ -5,8 +5,8 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
-    "@digigov/docusaurus-terminology": "^0.3.0",
-    "parse-md": "2.0.4"
+    "parse-md": "2.0.4",
+    "@digigov/terminology-store": "~0.3.0"
   },
   "scripts": {
     "build": ""

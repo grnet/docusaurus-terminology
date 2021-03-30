@@ -1,6 +1,6 @@
 const path = require('path');
 const parseMD = require('parse-md').default;
-const store = require('@digigov/docusaurus-terminology/store.js');
+const store = require('@digigov/terminology-store');
 
 module.exports = function (source) {
   const regex = new RegExp(
