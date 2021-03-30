@@ -1,7 +1,6 @@
 import babel from '@rollup/plugin-babel';
 import commonjs from '@rollup/plugin-commonjs';
 import resolve from '@rollup/plugin-node-resolve';
-import pkg from './package.json';
 import postcss from "rollup-plugin-postcss";
 
 export default {
@@ -14,13 +13,15 @@ export default {
   ],
   external: [
     'react',
-    'react-dom'
+    'react-dom',
+    '@docusaurus/BrowserOnly'
   ],
   plugins: [
     postcss({
       extensions: ['.css']
     }),
     babel({
+      babelHelpers: 'bundled',
       exclude: 'node_modules/**',
       include: '*.js'
     }),
