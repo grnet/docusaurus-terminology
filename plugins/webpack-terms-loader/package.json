@@ -6,7 +6,7 @@
   "private": false,
   "dependencies": {
     "parse-md": "2.0.4",
-    "@digigov/terminology-store": "~0.3.0"
+    "@digigov/terminology-store": "0.3.0"
   },
   "scripts": {
     
