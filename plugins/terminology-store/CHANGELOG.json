@@ -1,0 +1,17 @@
+{
+  "name": "@digigov/terminology-store",
+  "entries": [
+    {
+      "version": "0.3.1",
+      "tag": "@digigov/terminology-store_v0.3.1",
+      "date": "Wed, 31 Mar 2021 14:56:49 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Introduce the new terminology-store package that abstractes the logic used by other docusaurus & terminology libraries & tools"
+          }
+        ]
+      }
+    }
+  ]
+}

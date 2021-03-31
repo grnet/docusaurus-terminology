@@ -1,0 +1,22 @@
+{
+  "name": "@digigov/webpack-terms-replace-loader",
+  "entries": [
+    {
+      "version": "0.0.2",
+      "tag": "@digigov/webpack-terms-replace-loader_v0.0.2",
+      "date": "Wed, 31 Mar 2021 14:56:49 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Move the existing codebase to the plugins directory"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"@digigov/terminology-store\" from `0.3.0` to `0.3.1`"
+          }
+        ]
+      }
+    }
+  ]
+}

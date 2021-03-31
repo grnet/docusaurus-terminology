@@ -1,4 +1,4 @@
-# Change Log - @digigov/docusaurus-terminology
+# Change Log - @digigov/webpack-glossary-loader
 
 This log was last generated on Wed, 31 Mar 2021 14:56:49 GMT and should not be manually modified.
 
@@ -8,9 +8,4 @@ Wed, 31 Mar 2021 14:56:49 GMT
 ### Patches
 
 - Move the existing codebase to the plugins directory
-
-## 0.3.0
-Tue, 23 Mar 2021 16:17:35 GMT
-
-_Initial release_
 

@@ -2,6 +2,35 @@
   "name": "@digigov/docusaurus-terminology",
   "entries": [
     {
+      "version": "0.3.1",
+      "tag": "@digigov/docusaurus-terminology_v0.3.1",
+      "date": "Wed, 31 Mar 2021 14:56:49 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Move the existing codebase to the plugins directory"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"@digigov/webpack-glossary-plugin\" from `0.3.0` to `0.3.1`"
+          },
+          {
+            "comment": "Updating dependency \"@digigov/webpack-glossary-loader\" from `0.3.0` to `0.3.1`"
+          },
+          {
+            "comment": "Updating dependency \"@digigov/webpack-terms-loader\" from `0.0.1` to `0.0.2`"
+          },
+          {
+            "comment": "Updating dependency \"@digigov/webpack-terms-replace-loader\" from `0.0.1` to `0.0.2`"
+          },
+          {
+            "comment": "Updating dependency \"@digigov/terminology-store\" from `0.3.0` to `0.3.1`"
+          }
+        ]
+      }
+    },
+    {
       "version": "0.3.0",
       "tag": "@digigov/docusaurus-terminology_v0.3.0",
       "date": "Tue, 23 Mar 2021 16:17:35 GMT",
