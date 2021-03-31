@@ -1,12 +1,12 @@
 {
   "name": "@digigov/webpack-terms-loader",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "index.js",
   "license": "MIT",
   "private": false,
   "dependencies": {
     "parse-md": "2.0.4",
-    "@digigov/terminology-store": "0.3.0"
+    "@digigov/terminology-store": "0.3.1"
   },
   "scripts": {
     
