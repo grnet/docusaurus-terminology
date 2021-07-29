@@ -22,7 +22,7 @@ module.exports = function (context, options) {
       }
       options.resolved = true;
       config.module.rules = config.module.rules.map(rule => {
-        if (rule.use.some(({ loader }) => loader && loader.includes("plugin-content-docs"))) {
+        if (rule.use && rule.use.some(({ loader }) => loader && loader.includes("plugin-content-docs"))) {
           rule.rules = [
             {
               test: glossaryRegex,
