@@ -2,6 +2,18 @@
   "name": "@digigov/docusaurus-terminology",
   "entries": [
     {
+      "version": "0.3.3",
+      "tag": "@digigov/docusaurus-terminology_v0.3.3",
+      "date": "Fri, 30 Jul 2021 11:35:29 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Initial changelog for docusaurus-terminology plugin"
+          }
+        ]
+      }
+    },
+    {
       "version": "0.3.2",
       "tag": "@digigov/docusaurus-terminology_v0.3.2",
       "date": "Thu, 22 Apr 2021 12:56:25 GMT",
