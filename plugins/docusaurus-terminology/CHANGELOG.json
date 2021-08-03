@@ -2,6 +2,18 @@
   "name": "@digigov/docusaurus-terminology",
   "entries": [
     {
+      "version": "0.3.4",
+      "tag": "@digigov/docusaurus-terminology_v0.3.4",
+      "date": "Tue, 03 Aug 2021 12:09:02 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"@digigov/webpack-glossary-plugin\" from `0.3.2` to `0.3.3`"
+          }
+        ]
+      }
+    },
+    {
       "version": "0.3.3",
       "tag": "@digigov/docusaurus-terminology_v0.3.3",
       "date": "Fri, 30 Jul 2021 11:35:29 GMT",
