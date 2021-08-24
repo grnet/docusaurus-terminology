@@ -1,17 +1,8 @@
 import React, { useEffect, useState } from "react";
-import Postel from "postel";
 import BrowserOnly from "@docusaurus/BrowserOnly";
 import RcTooltip from "rc-tooltip";
 import "rc-tooltip/assets/bootstrap_white.css";
 import "./tooltip-styles.css";
-
-const caret = {
-  height: "10px",
-  width: "10px",
-  background: "rgb(255, 255, 255)",
-  clipPath: "polygon(100% 0px, 0% 100%, 100% 100%)",
-  filter: "drop-shadow(rgba(50, 50, 0, 0.5) -1px 16px 6px)",
-};
 
 const link = {
   textDecoration: "underline",
