@@ -7,7 +7,6 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
-    "@digigov/webpack-glossary-plugin": "0.3.3",
     "@digigov/webpack-glossary-loader": "0.3.2",
     "@digigov/webpack-terms-loader": "0.0.3",
     "@digigov/webpack-terms-replace-loader": "0.0.3",

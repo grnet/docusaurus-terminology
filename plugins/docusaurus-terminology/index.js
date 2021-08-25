@@ -1,3 +1,5 @@
+const fs = require('fs')
+const path = require('path')
 module.exports = function (context, options) {
   const formattedTermsPath = options.termsDir
     .replace(/^\.\//, '')
@@ -7,10 +9,21 @@ module.exports = function (context, options) {
     .replace(/^\.\//, '')
     .replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
   const glossaryRegex = new RegExp(`${formattedGlossaryPath}`);
-  const GlossaryPlugin = require('@digigov/webpack-glossary-plugin');
+  try{
+    fs.rmdirSync('node_modules/.cache', {recursive:true})
+  }catch(err){
 
+  }
   return {
     name: 'terminology-docusaurus-plugin',
+    async postBuild({siteConfig = {}, routesPaths = [], outDir}) {
+      const glossary = fs.readFileSync('.docusaurus/glossary.json').toString()
+      const glossaryJSON = JSON.parse(glossary)
+      fs.writeFileSync(path.join(outDir, options.docsDir, 'glossary.json'), glossary)
+      for(const term of Object.keys(glossaryJSON)){
+        fs.writeFileSync(path.join(outDir,`${term}.json` ), JSON.stringify(glossaryJSON[term]))
+      }
+    },
     configureWebpack(config, isServer, utils) {
       options.baseUrl = config.output.publicPath;
       // prefix baseUrl in options.glossaryTerms
@@ -57,9 +70,7 @@ module.exports = function (context, options) {
         }
         return rule;
       });
-      return {
-        plugins: [new GlossaryPlugin(options)],
-      };
+      return {};
     },
   };
 };

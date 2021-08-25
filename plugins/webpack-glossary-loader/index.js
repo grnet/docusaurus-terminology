@@ -9,6 +9,11 @@ import Glossary from "@digigov/docusaurus-glossary-view";
 
 module.exports = function (source) {
   const urls = store.terms;
+  this.cacheable(false)
+  this.emitFile(
+    path.join(this.query.docsDir, 'glossary.json'),
+    JSON.stringify(store.terms)
+  )
   const { content } = parseMD(source);
   source = source.replace(content, importStatement + content);
   source += `

@@ -11,6 +11,7 @@ module.exports = function (source) {
   const termMatch = this.resourcePath.match(regex);
   if (termMatch) {
     store.addTerm(termMatch[1], parseMD(source));
+    this.emitFile(termMatch[1]+'.json', JSON.stringify(parseMD(source)))
   }
 
   return source;
