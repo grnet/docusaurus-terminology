@@ -16,14 +16,6 @@ module.exports = function (context, options) {
   }
   return {
     name: 'terminology-docusaurus-plugin',
-    async postBuild({siteConfig = {}, routesPaths = [], outDir}) {
-      const glossary = fs.readFileSync('.docusaurus/glossary.json').toString()
-      const glossaryJSON = JSON.parse(glossary)
-      fs.writeFileSync(path.join(outDir, options.docsDir, 'glossary.json'), glossary)
-      for(const term of Object.keys(glossaryJSON)){
-        fs.writeFileSync(path.join(outDir,`${term}.json` ), JSON.stringify(glossaryJSON[term]))
-      }
-    },
     configureWebpack(config, isServer, utils) {
       options.baseUrl = config.output.publicPath;
       // prefix baseUrl in options.glossaryTerms
