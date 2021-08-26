@@ -2,6 +2,18 @@
   "name": "@digigov/webpack-terms-loader",
   "entries": [
     {
+      "version": "0.0.4",
+      "tag": "@digigov/webpack-terms-loader_v0.0.4",
+      "date": "Thu, 26 Aug 2021 11:24:45 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "use emitfile to create json files"
+          }
+        ]
+      }
+    },
+    {
       "version": "0.0.3",
       "tag": "@digigov/webpack-terms-loader_v0.0.3",
       "date": "Thu, 22 Apr 2021 12:56:25 GMT",

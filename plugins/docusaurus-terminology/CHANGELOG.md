@@ -1,6 +1,13 @@
 # Change Log - @digigov/docusaurus-terminology
 
-This log was last generated on Tue, 03 Aug 2021 12:09:02 GMT and should not be manually modified.
+This log was last generated on Thu, 26 Aug 2021 11:24:45 GMT and should not be manually modified.
+
+## 0.3.5
+Thu, 26 Aug 2021 11:24:45 GMT
+
+### Patches
+
+- fix generation of term json files
 
 ## 0.3.4
 Tue, 03 Aug 2021 12:09:02 GMT
