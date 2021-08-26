@@ -2,6 +2,18 @@
   "name": "@digigov/docusaurus-term-preview",
   "entries": [
     {
+      "version": "0.2.2",
+      "tag": "@digigov/docusaurus-term-preview_v0.2.2",
+      "date": "Thu, 26 Aug 2021 09:16:08 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Fix lint errors"
+          }
+        ]
+      }
+    },
+    {
       "version": "0.2.1",
       "tag": "@digigov/docusaurus-term-preview_v0.2.1",
       "date": "Tue, 24 Aug 2021 13:52:38 GMT",
