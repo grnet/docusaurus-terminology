@@ -11,7 +11,7 @@
     "build": "rollup -c --silent"
   },
   "peerDependencies": {
-    "@docusaurus/core": "2.0.0-beta.3",
+    "@docusaurus/core": "2.0.0-beta.6",
     "react": "16.14.0",
     "react-dom": "16.14.0"
   },
