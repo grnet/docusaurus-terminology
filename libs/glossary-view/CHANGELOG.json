@@ -1,0 +1,20 @@
+{
+  "name": "@digigov/docusaurus-glossary-view",
+  "entries": [
+    {
+      "version": "0.2.2",
+      "tag": "@digigov/docusaurus-glossary-view_v0.2.2",
+      "date": "Mon, 27 Sep 2021 11:18:38 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Update docusaurus to v2.0.0-beta.6"
+          },
+          {
+            "comment": "Update docusarus to v2.0.0-beta.6"
+          }
+        ]
+      }
+    }
+  ]
+}
