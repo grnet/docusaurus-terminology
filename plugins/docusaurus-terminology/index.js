@@ -4,7 +4,7 @@ module.exports = function (context, options) {
   const formattedTermsPath = options.termsDir
     .replace(/^\.\//, '')
     .replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-  const termsRegex = new RegExp(`${formattedTermsPath}.*?\.md`);
+  const termsRegex = new RegExp(`${formattedTermsPath}.*?\.mdx?$`);
   const formattedGlossaryPath = options.glossaryFilepath
     .replace(/^\.\//, '')
     .replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
@@ -26,24 +26,15 @@ module.exports = function (context, options) {
         }
       }
       options.resolved = true;
-      config.module.rules = config.module.rules.map(rule => {
+      const newRules = config.module.rules.map(rule => {
         if (rule.use && rule.use.some(({ loader }) => loader && loader.includes("plugin-content-docs"))) {
-          rule.rules = [
+          rule.oneOf = [
             {
               test: glossaryRegex,
               enforce: 'pre',
               use: [
                 {
                   loader: require.resolve('@digigov/webpack-glossary-loader'),
-                  options
-                }
-              ]
-            },
-            {
-              enforce: 'pre',
-              use: [
-                {
-                  loader: require.resolve('@digigov/webpack-terms-replace-loader'),
                   options
                 }
               ]
@@ -59,10 +50,21 @@ module.exports = function (context, options) {
               ]
             }
           ];
+          rule.use.push(
+            {
+              loader: require.resolve('@digigov/webpack-terms-replace-loader'),
+              options
+            }
+          ) 
         }
         return rule;
       });
-      return {};
+      return {
+        mergeStrategy: {'module.rules': 'replace'},
+        module:{
+          rules: newRules
+        }
+      };
     },
   };
 };
