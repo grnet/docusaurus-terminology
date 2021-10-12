@@ -1,6 +1,13 @@
 # Change Log - @digigov/docusaurus-terminology
 
-This log was last generated on Thu, 26 Aug 2021 11:24:45 GMT and should not be manually modified.
+This log was last generated on Tue, 12 Oct 2021 09:13:08 GMT and should not be manually modified.
+
+## 0.3.6
+Tue, 12 Oct 2021 09:13:08 GMT
+
+### Patches
+
+- fix webpack merging of terminology rules
 
 ## 0.3.5
 Thu, 26 Aug 2021 11:24:45 GMT

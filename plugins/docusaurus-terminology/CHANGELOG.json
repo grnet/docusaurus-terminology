@@ -2,6 +2,18 @@
   "name": "@digigov/docusaurus-terminology",
   "entries": [
     {
+      "version": "0.3.6",
+      "tag": "@digigov/docusaurus-terminology_v0.3.6",
+      "date": "Tue, 12 Oct 2021 09:13:08 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "fix webpack merging of terminology rules"
+          }
+        ]
+      }
+    },
+    {
       "version": "0.3.5",
       "tag": "@digigov/docusaurus-terminology_v0.3.5",
       "date": "Thu, 26 Aug 2021 11:24:45 GMT",
