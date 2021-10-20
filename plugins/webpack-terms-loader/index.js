@@ -1,6 +1,8 @@
 const path = require('path');
 const parseMD = require('parse-md').default;
 const store = require('@digigov/terminology-store');
+const remark = require('remark')
+const remarkHTML = require('remark-html')
 
 module.exports = function (source) {
   const regex = new RegExp(
@@ -10,8 +12,12 @@ module.exports = function (source) {
   );
   const termMatch = this.resourcePath.match(regex);
   if (termMatch) {
-    store.addTerm(termMatch[1], parseMD(source));
-    this.emitFile(termMatch[1]+'.json', JSON.stringify(parseMD(source)))
+    const data = parseMD(source);
+    data.metadata.hoverText = data.metadata.hoverText? remark()
+    .use(remarkHTML)
+    .processSync(data.metadata.hoverText).contents: '';
+    store.addTerm(termMatch[1], data);
+    this.emitFile(termMatch[1]+'.json', JSON.stringify(data))
   }
 
   return source;

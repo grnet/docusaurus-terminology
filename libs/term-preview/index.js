@@ -35,7 +35,7 @@ const Content = React.forwardRef(({ setContent, content, url, theme }, ref) => {
       {content ? (
         <>
           <h4>{content.metadata.title}</h4>
-          <p>{content.metadata.hoverText}</p>
+          <div dangerouslySetInnerHTML={{__html: content.metadata.hoverText}}></div>
         </>
       ) : (
         "loading..."
