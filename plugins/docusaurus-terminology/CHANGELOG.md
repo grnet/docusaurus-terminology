@@ -1,6 +1,11 @@
 # Change Log - @digigov/docusaurus-terminology
 
-This log was last generated on Tue, 12 Oct 2021 09:13:08 GMT and should not be manually modified.
+This log was last generated on Fri, 22 Oct 2021 11:57:26 GMT and should not be manually modified.
+
+## 0.3.7
+Fri, 22 Oct 2021 11:57:26 GMT
+
+_Version update only_
 
 ## 0.3.6
 Tue, 12 Oct 2021 09:13:08 GMT

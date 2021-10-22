@@ -1,6 +1,14 @@
 # Change Log - @digigov/docusaurus-term-preview
 
-This log was last generated on Wed, 20 Oct 2021 12:45:51 GMT and should not be manually modified.
+This log was last generated on Fri, 22 Oct 2021 11:57:26 GMT and should not be manually modified.
+
+## 0.2.5
+Fri, 22 Oct 2021 11:57:26 GMT
+
+### Patches
+
+- render markdown in hovertext
+- Upgrade docusaurus to v2.0.0-beta.8
 
 ## 0.2.4
 Wed, 20 Oct 2021 12:45:51 GMT
