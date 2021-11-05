@@ -1,6 +1,13 @@
 # Change Log - @digigov/docusaurus-glossary-view
 
-This log was last generated on Fri, 22 Oct 2021 11:57:26 GMT and should not be manually modified.
+This log was last generated on Fri, 05 Nov 2021 12:24:20 GMT and should not be manually modified.
+
+## 0.3.0
+Fri, 05 Nov 2021 12:24:20 GMT
+
+### Minor changes
+
+- Upgrade docusaurus to beta.9
 
 ## 0.2.4
 Fri, 22 Oct 2021 11:57:26 GMT
