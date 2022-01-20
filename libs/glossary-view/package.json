@@ -1,6 +1,6 @@
 {
   "name": "@digigov/docusaurus-glossary-view",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Glossary view component",
   "main": "dist/index.js",
   "license": "MIT",

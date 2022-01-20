@@ -1,6 +1,13 @@
 # Change Log - @digigov/docusaurus-term-preview
 
-This log was last generated on Fri, 05 Nov 2021 12:24:20 GMT and should not be manually modified.
+This log was last generated on Thu, 20 Jan 2022 10:45:21 GMT and should not be manually modified.
+
+## 0.3.1
+Thu, 20 Jan 2022 10:45:21 GMT
+
+### Patches
+
+- upgrade docusaurus to beta.14
 
 ## 0.3.0
 Fri, 05 Nov 2021 12:24:20 GMT

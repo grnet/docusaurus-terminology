@@ -2,6 +2,18 @@
   "name": "@digigov/docusaurus-term-preview",
   "entries": [
     {
+      "version": "0.3.1",
+      "tag": "@digigov/docusaurus-term-preview_v0.3.1",
+      "date": "Thu, 20 Jan 2022 10:45:21 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "upgrade docusaurus to beta.14"
+          }
+        ]
+      }
+    },
+    {
       "version": "0.3.0",
       "tag": "@digigov/docusaurus-term-preview_v0.3.0",
       "date": "Fri, 05 Nov 2021 12:24:20 GMT",
