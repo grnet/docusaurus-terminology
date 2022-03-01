@@ -1,6 +1,6 @@
 {
   "name": "@digigov/docusaurus-term-preview",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Term preview component with tooltip",
   "main": "dist/index.js",
   "license": "MIT",
