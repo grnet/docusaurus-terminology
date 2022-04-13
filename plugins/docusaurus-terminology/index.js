@@ -9,9 +9,9 @@ module.exports = function (context, options) {
     .replace(/^\.\//, '')
     .replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
   const glossaryRegex = new RegExp(`${formattedGlossaryPath}`);
-  try{
-    fs.rmdirSync('node_modules/.cache', {recursive:true})
-  }catch(err){
+  try {
+    fs.rmdirSync('node_modules/.cache', { recursive: true })
+  } catch (err) {
 
   }
   return {
@@ -55,15 +55,14 @@ module.exports = function (context, options) {
               loader: require.resolve('@digigov/webpack-terms-replace-loader'),
               options
             }
-          ) 
+          )
         }
         return rule;
       });
+      config.module.rules = newRules;
       return {
-        mergeStrategy: {'module.rules': 'replace'},
-        module:{
-          rules: newRules
-        }
+        mergeStrategy: { 'module': 'replace' },
+        module: config.module
       };
     },
   };

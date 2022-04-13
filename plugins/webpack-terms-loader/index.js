@@ -13,11 +13,11 @@ module.exports = function (source) {
   const termMatch = this.resourcePath.match(regex);
   if (termMatch) {
     const data = parseMD(source);
-    data.metadata.hoverText = data.metadata.hoverText? remark()
-    .use(remarkHTML)
-    .processSync(data.metadata.hoverText).contents: '';
+    data.metadata.hoverText = data.metadata.hoverText ? remark()
+      .use(remarkHTML)
+      .processSync(data.metadata.hoverText).contents : '';
     store.addTerm(termMatch[1], data);
-    this.emitFile(termMatch[1]+'.json', JSON.stringify(data))
+    this.emitFile(termMatch[1] + '.json', JSON.stringify(data))
   }
 
   return source;

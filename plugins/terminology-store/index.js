@@ -8,11 +8,11 @@ class TerminologyStore {
     // Why use a map??? JUST FOR FUN ¯\_(ツ)_/¯
     this.terms = {};
 
-    if(!fs.existsSync(docusaurusPath)){
+    if (!fs.existsSync(docusaurusPath)) {
       fs.mkdirSync(docusaurusPath);
     }
 
-    if(!fs.existsSync(glossaryPath)) {
+    if (!fs.existsSync(glossaryPath)) {
       fs.writeFileSync(glossaryPath, '{}');
     }
 
