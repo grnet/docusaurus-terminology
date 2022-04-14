@@ -1,6 +1,11 @@
 # Change Log - @digigov/webpack-glossary-loader
 
-This log was last generated on Thu, 26 Aug 2021 11:24:45 GMT and should not be manually modified.
+This log was last generated on Thu, 14 Apr 2022 12:32:51 GMT and should not be manually modified.
+
+## 0.3.4
+Thu, 14 Apr 2022 12:32:51 GMT
+
+_Version update only_
 
 ## 0.3.3
 Thu, 26 Aug 2021 11:24:45 GMT

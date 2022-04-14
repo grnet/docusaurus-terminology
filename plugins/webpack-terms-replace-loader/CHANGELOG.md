@@ -1,6 +1,11 @@
 # Change Log - @digigov/webpack-terms-replace-loader
 
-This log was last generated on Thu, 22 Apr 2021 12:56:25 GMT and should not be manually modified.
+This log was last generated on Thu, 14 Apr 2022 12:32:51 GMT and should not be manually modified.
+
+## 0.0.4
+Thu, 14 Apr 2022 12:32:51 GMT
+
+_Version update only_
 
 ## 0.0.3
 Thu, 22 Apr 2021 12:56:25 GMT

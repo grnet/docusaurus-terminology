@@ -1,6 +1,13 @@
 # Change Log - @digigov/webpack-terms-loader
 
-This log was last generated on Fri, 22 Oct 2021 11:57:26 GMT and should not be manually modified.
+This log was last generated on Thu, 14 Apr 2022 12:32:51 GMT and should not be manually modified.
+
+## 0.0.6
+Thu, 14 Apr 2022 12:32:51 GMT
+
+### Patches
+
+- lint file
 
 ## 0.0.5
 Fri, 22 Oct 2021 11:57:26 GMT

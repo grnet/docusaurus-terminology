@@ -2,6 +2,18 @@
   "name": "@digigov/terminology-store",
   "entries": [
     {
+      "version": "0.3.2",
+      "tag": "@digigov/terminology-store_v0.3.2",
+      "date": "Thu, 14 Apr 2022 12:32:51 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "lint file"
+          }
+        ]
+      }
+    },
+    {
       "version": "0.3.1",
       "tag": "@digigov/terminology-store_v0.3.1",
       "date": "Wed, 31 Mar 2021 14:56:49 GMT",
