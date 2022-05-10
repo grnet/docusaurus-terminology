@@ -2,7 +2,7 @@
   "name": "@digigov/webpack-terms-replace-loader",
   "version": "0.0.4",
   "main": "index.js",
-  "license": "MIT",
+  "license": "BSD-2-Clause",
   "private": false,
   "dependencies": {
     "parse-md": "2.0.4",

@@ -3,7 +3,7 @@
   "version": "0.3.2",
   "description": "Term preview component with tooltip",
   "main": "dist/index.js",
-  "license": "MIT",
+  "license": "BSD-2-Clause",
   "publishConfig": {
     "access": "public"
   },

@@ -4,7 +4,7 @@
   "description": "Webpack loader for Docusaurus glossaries",
   "main": "index.js",
   "author": "GRNET Developers <devs@lists.grnet.gr>",
-  "license": "MIT",
+  "license": "BSD-2-Clause",
   "dependencies": {
     "@digigov/terminology-store": "0.3.2",
     "parse-md": "2.0.4"
