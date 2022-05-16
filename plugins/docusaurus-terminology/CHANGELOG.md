@@ -1,6 +1,13 @@
 # Change Log - @digigov/docusaurus-terminology
 
-This log was last generated on Thu, 14 Apr 2022 12:32:51 GMT and should not be manually modified.
+This log was last generated on Mon, 16 May 2022 14:42:45 GMT and should not be manually modified.
+
+## 0.3.9
+Mon, 16 May 2022 14:42:45 GMT
+
+### Patches
+
+- Change MIT License to BSD-2-Clause
 
 ## 0.3.8
 Thu, 14 Apr 2022 12:32:51 GMT

@@ -2,6 +2,23 @@
   "name": "@digigov/webpack-terms-replace-loader",
   "entries": [
     {
+      "version": "0.0.5",
+      "tag": "@digigov/webpack-terms-replace-loader_v0.0.5",
+      "date": "Mon, 16 May 2022 14:42:45 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Change MIT License to BSD-2-Clause"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"@digigov/terminology-store\" from `0.3.2` to `0.3.3`"
+          }
+        ]
+      }
+    },
+    {
       "version": "0.0.4",
       "tag": "@digigov/webpack-terms-replace-loader_v0.0.4",
       "date": "Thu, 14 Apr 2022 12:32:51 GMT",

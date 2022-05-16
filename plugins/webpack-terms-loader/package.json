@@ -1,12 +1,12 @@
 {
   "name": "@digigov/webpack-terms-loader",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "main": "index.js",
   "license": "BSD-2-Clause",
   "private": false,
   "dependencies": {
     "parse-md": "2.0.4",
-    "@digigov/terminology-store": "0.3.2",
+    "@digigov/terminology-store": "0.3.3",
     "remark": "13.0.0",
     "remark-html": "13.0.2"
   },

@@ -1,6 +1,13 @@
 # Change Log - @digigov/docusaurus-term-preview
 
-This log was last generated on Tue, 01 Mar 2022 10:56:06 GMT and should not be manually modified.
+This log was last generated on Mon, 16 May 2022 14:42:45 GMT and should not be manually modified.
+
+## 0.3.3
+Mon, 16 May 2022 14:42:45 GMT
+
+### Patches
+
+- Change MIT License to BSD-2-Clause
 
 ## 0.3.2
 Tue, 01 Mar 2022 10:56:06 GMT
