@@ -2,6 +2,18 @@
   "name": "@digigov/webpack-terms-loader",
   "entries": [
     {
+      "version": "0.0.8",
+      "tag": "@digigov/webpack-terms-loader_v0.0.8",
+      "date": "Thu, 11 Aug 2022 13:48:01 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "sanitize and parse HTML before dangerously rendering"
+          }
+        ]
+      }
+    },
+    {
       "version": "0.0.7",
       "tag": "@digigov/webpack-terms-loader_v0.0.7",
       "date": "Mon, 16 May 2022 14:42:45 GMT",

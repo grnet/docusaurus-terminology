@@ -2,6 +2,18 @@
   "name": "@digigov/docusaurus-glossary-view",
   "entries": [
     {
+      "version": "0.3.4",
+      "tag": "@digigov/docusaurus-glossary-view_v0.3.4",
+      "date": "Thu, 11 Aug 2022 13:48:01 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "sanitize and parse HTML before dangerously rendering"
+          }
+        ]
+      }
+    },
+    {
       "version": "0.3.3",
       "tag": "@digigov/docusaurus-glossary-view_v0.3.3",
       "date": "Mon, 16 May 2022 14:42:45 GMT",

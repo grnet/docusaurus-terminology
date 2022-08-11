@@ -1,6 +1,6 @@
 {
   "name": "@digigov/docusaurus-terminology",
-  "version": "0.3.9",
+  "version": "0.3.10",
   "description": "Docusaurus plugin for managing terminologies",
   "main": "index.js",
   "author": "GRNET Developers <devs@lists.grnet.gr>",
@@ -8,7 +8,7 @@
   "private": false,
   "dependencies": {
     "@digigov/webpack-glossary-loader": "0.3.5",
-    "@digigov/webpack-terms-loader": "0.0.7",
+    "@digigov/webpack-terms-loader": "0.0.8",
     "@digigov/webpack-terms-replace-loader": "0.0.5",
     "@digigov/terminology-store": "0.3.3"
   },
