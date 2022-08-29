@@ -12,9 +12,7 @@ class TerminologyStore {
       fs.mkdirSync(docusaurusPath);
     }
 
-    if (!fs.existsSync(glossaryPath)) {
-      fs.writeFileSync(glossaryPath, '{}');
-    }
+    fs.writeFileSync(glossaryPath, '{}');
 
     this.terms = this.readGlossary();
     this.updated = Object.keys(this.terms);
