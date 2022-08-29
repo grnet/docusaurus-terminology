@@ -10,6 +10,7 @@ import Glossary from "@digigov/docusaurus-glossary-view";
 module.exports = function (source) {
   const urls = store.terms;
   this.cacheable(false)
+  this.addDependency(path.join(this.query.docsDir, 'glossary.json'))
   this.emitFile(
     path.join(this.query.docsDir, 'glossary.json'),
     JSON.stringify(store.terms)
