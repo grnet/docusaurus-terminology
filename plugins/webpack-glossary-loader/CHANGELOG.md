@@ -1,6 +1,13 @@
 # Change Log - @digigov/webpack-glossary-loader
 
-This log was last generated on Mon, 16 May 2022 14:42:45 GMT and should not be manually modified.
+This log was last generated on Wed, 31 Aug 2022 16:10:12 GMT and should not be manually modified.
+
+## 0.3.6
+Wed, 31 Aug 2022 16:10:12 GMT
+
+### Patches
+
+- Fix issues with terminology-store not updating glossary terms when 
 
 ## 0.3.5
 Mon, 16 May 2022 14:42:45 GMT

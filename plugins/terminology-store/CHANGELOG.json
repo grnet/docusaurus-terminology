@@ -2,6 +2,18 @@
   "name": "@digigov/terminology-store",
   "entries": [
     {
+      "version": "0.3.4",
+      "tag": "@digigov/terminology-store_v0.3.4",
+      "date": "Wed, 31 Aug 2022 16:10:12 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Fix issues with terminology-store not updating glossary terms when a term is deleted "
+          }
+        ]
+      }
+    },
+    {
       "version": "0.3.3",
       "tag": "@digigov/terminology-store_v0.3.3",
       "date": "Mon, 16 May 2022 14:42:45 GMT",

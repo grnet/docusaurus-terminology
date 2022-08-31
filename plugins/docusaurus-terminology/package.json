@@ -1,16 +1,16 @@
 {
   "name": "@digigov/docusaurus-terminology",
-  "version": "0.3.10",
+  "version": "0.3.11",
   "description": "Docusaurus plugin for managing terminologies",
   "main": "index.js",
   "author": "GRNET Developers <devs@lists.grnet.gr>",
   "license": "BSD-2-Clause",
   "private": false,
   "dependencies": {
-    "@digigov/webpack-glossary-loader": "0.3.5",
-    "@digigov/webpack-terms-loader": "0.0.8",
-    "@digigov/webpack-terms-replace-loader": "0.0.5",
-    "@digigov/terminology-store": "0.3.3"
+    "@digigov/webpack-glossary-loader": "0.3.6",
+    "@digigov/webpack-terms-loader": "0.0.9",
+    "@digigov/webpack-terms-replace-loader": "0.0.6",
+    "@digigov/terminology-store": "0.3.4"
   },
   "scripts": {
     

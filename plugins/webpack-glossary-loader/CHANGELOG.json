@@ -2,6 +2,23 @@
   "name": "@digigov/webpack-glossary-loader",
   "entries": [
     {
+      "version": "0.3.6",
+      "tag": "@digigov/webpack-glossary-loader_v0.3.6",
+      "date": "Wed, 31 Aug 2022 16:10:12 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Fix issues with terminology-store not updating glossary terms when "
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"@digigov/terminology-store\" from `0.3.3` to `0.3.4`"
+          }
+        ]
+      }
+    },
+    {
       "version": "0.3.5",
       "tag": "@digigov/webpack-glossary-loader_v0.3.5",
       "date": "Mon, 16 May 2022 14:42:45 GMT",

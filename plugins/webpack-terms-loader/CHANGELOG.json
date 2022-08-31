@@ -2,6 +2,18 @@
   "name": "@digigov/webpack-terms-loader",
   "entries": [
     {
+      "version": "0.0.9",
+      "tag": "@digigov/webpack-terms-loader_v0.0.9",
+      "date": "Wed, 31 Aug 2022 16:10:12 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"@digigov/terminology-store\" from `0.3.3` to `0.3.4`"
+          }
+        ]
+      }
+    },
+    {
       "version": "0.0.8",
       "tag": "@digigov/webpack-terms-loader_v0.0.8",
       "date": "Thu, 11 Aug 2022 13:48:01 GMT",
