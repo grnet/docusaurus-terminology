@@ -1,0 +1,52 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/rush.schema.json",
+  "rushVersion": "5.46.1",
+  "pnpmVersion": "5.15.2",
+  // "npmVersion": "4.5.0",
+  // "yarnVersion": "1.9.4",
+  "pnpmOptions": {},
+  "nodeSupportedVersionRange": ">=14.0.0",
+  "gitPolicy": {},
+  "repository": {
+    // "url": "https://github.com/microsoft/rush-example",
+    // "defaultBranch": "master",
+    // "defaultRemote": "origin"
+  },
+  "eventHooks": {
+    "preRushInstall": [],
+    "postRushInstall": [],
+    "preRushBuild": [],
+    "postRushBuild": []
+  },
+  "variants": [],
+  "projects": [
+    {
+      "packageName": "@digigov/docusaurus-terminology",
+      "projectFolder": "plugins/docusaurus-terminology"
+    },
+    {
+      "packageName": "@digigov/terminology-store",
+      "projectFolder": "plugins/terminology-store"
+    },
+    {
+      "packageName": "@digigov/webpack-glossary-loader",
+      "projectFolder": "plugins/webpack-glossary-loader"
+    },
+    {
+      "packageName": "@digigov/webpack-terms-loader",
+      "projectFolder": "plugins/webpack-terms-loader"
+    },
+    {
+      "packageName": "@digigov/webpack-terms-replace-loader",
+      "projectFolder": "plugins/webpack-terms-replace-loader"
+    },
+    {
+      "packageName": "@digigov/docusaurus-glossary-view",
+      "projectFolder": "libs/glossary-view"
+    },
+    {
+      "packageName": "@digigov/docusaurus-term-preview",
+      "projectFolder": "libs/term-preview"
+    }
+  ]
+}
