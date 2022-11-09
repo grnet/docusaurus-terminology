@@ -10,6 +10,6 @@
     "parse-md": "2.0.4"
   },
   "scripts": {
-    
+    "build": "echo 'no build is required'"
   }
 }

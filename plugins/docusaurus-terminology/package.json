@@ -13,6 +13,6 @@
     "@digigov/terminology-store": "0.3.4"
   },
   "scripts": {
-    
+    "build": "echo 'no build is required'"
   }
 }

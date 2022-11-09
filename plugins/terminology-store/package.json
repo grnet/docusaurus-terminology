@@ -6,6 +6,6 @@
   "author": "GRNET Developers <devs@lists.grnet.gr>",
   "license": "BSD-2-Clause",
   "scripts": {
-    
+    "build": "echo 'no build is required'"
   }
 }

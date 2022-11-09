@@ -11,6 +11,6 @@
     "remark-html": "13.0.2"
   },
   "scripts": {
-    
+    "build": "echo 'no build is required'"
   }
 }
