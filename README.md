@@ -9,7 +9,7 @@ This Docusaurus plugin allows you to use standout terms in your pages, which, wh
 ## How it works
 This plugin retrieves docs in two ways:
 
-1. Parses all `*.mdx` files in the `docs/` directory and replaces each pattern `[text](path)` (Markdown syntax for a hyperlink) with a `<a>` tag supporting a tooltip functionality (using the [rc-tooltip](https://www.npmjs.com/package/rc-tooltip)).
+1. Parses all `*.mdx` files in the `docs/` directory and replaces each pattern `[text](path)` (Markdown syntax for a hyperlink) with a `<a>` tag supporting tooltip functionality using the [@digigov/term-preview](https://www.npmjs.com/package/@digigov/docusaurus-term-preview) package that uses the [rc-tooltip](https://www.npmjs.com/package/rc-tooltip) under the hood.
 2. Creates a glossary with all the terms from `*.mdx` files that are listed in the `docs/terms/`.
 
 In greater depth:
