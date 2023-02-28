@@ -67,7 +67,7 @@
       "comments": {
         "patch": [
           {
-            "comment": "use correct webpack merge strategy"
+            "comment": "Use correct webpack merge strategy"
           }
         ],
         "dependency": [
@@ -105,7 +105,7 @@
       "comments": {
         "patch": [
           {
-            "comment": "fix webpack merging of terminology rules"
+            "comment": "Fix webpack merging of terminology rules"
           }
         ]
       }
@@ -117,7 +117,7 @@
       "comments": {
         "patch": [
           {
-            "comment": "fix generation of term json files"
+            "comment": "Fix generation of term json files"
           }
         ],
         "dependency": [
