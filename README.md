@@ -1,92 +1,119 @@
-# docusaurus-terminology
+# @grnet/docusaurus-terminology
 
 ## Overview
 
-This Docusaurus plugin allows you to use standout terms in your pages, which, when hovered over, display a short explanation, and, when clicked, navigate to the relevant page. The plugin parses all `*.mdx` files and replaces each pattern with an appropriate React component supporting a tooltip functionality and generates a glossary with all terms corresponding to the `*.md` files.
+This Docusaurus plugin allows you to use standout terms in your pages, which, when hovered over, displays a short explanation, and when clicked, navigates you to the relevant page. The plugin parses all `*.mdx` files and replaces each Markdown hyperlink pattern with a `<a>` HTML tag supporting a tooltip functionality. Additionally, it generates a glossary with all terms corresponding to the `*.mdx` files.
 
 [gif]
 
 ## How it works
-This plugin parses docs in two ways:
+This plugin retrieves docs in two ways:
 
-1. Parses all `*.mdx` files under `docs/` and replaces each pattern with an appropriate React component supporting a tooltip functionality.
-2. Generates a glossary with all terms corresponding to the `*.md` files under `docs/terms/`.
+1. Parses all `*.mdx` files in the `docs/` directory and replaces each pattern `[text](path)` (Markdown syntax for a hyperlink) with a `<a>` tag supporting a tooltip functionality (using the [rc-tooltip](https://www.npmjs.com/package/rc-tooltip)).
+2. Creates a glossary with all the terms from `*.mdx` files that are listed in the `docs/terms/`.
 
-Parses all markdown files and generates a glossary page with all the pattern terms found in the `.md` files.
-
-In more details:
+In greater depth:
 
 #### Terms
 
-We have created a directory `docs/terms`, which contains all the terms you need for your website. We have a specific format for each term:
+The plugin needs the directory `docs/terms`, which contains all the terms you need for your website. The specific format for each term:
 
+In `docs/terms/example-term.mdx`:
 ```
 ---
-id: host
-title: Host 
-hoverText: A person responsible for guests at an event
+id: example-term
+title: Example term
+hoverText: This is an example term
 ---
 
-A host is a person responsible for guests at an event or for providing [hospitality](./docs/terms/hospitality) during it.
+Example body
 ```
 where:
 
 * `id`: the unique id of the docusaurus web page, this is docusaurus specific
-* `title`: the visible title of the term, docusaurus specific as well
-* `hoverText`: this text shows up when you hover over a term in a web page
 
-After the markdown header, you can write your own text in markdown regarding that term.
+* `title`: the visible title of the term, docusaurus specific as well
+
+* `hoverText`: this text shows when you hover over a term in a documentation page
+
+You can add your own content under the markdown metadata header.
 
 #### Glossary
 
-We also have a glossary page, which gathers all terms from the `docs/terms` directory, and compiles them to a single page, where you can overview each term along with the hoverText explanation of each term. You can also click on a term and go to the term page. To see this page, visit:
-
-```
-http://localhost:3000/docs/glossary
-```
+The plugin creates a glossary that aggregates all of the terms from the `docs/terms` directory onto a single page where you can examine each term and its `hoverText` definition. Also, you can click a term to go to the term page. To see the glossary page you can visit [http://localhost:3000/docs/glossary](http://localhost:3000/docs/glossary)
 
 ## Installation
 
-To install the Docusaurus terminology tool, you will need to add it to your project as a npm package. You can do this by running the following command in your project's root directory:
+To use this plugin, you have to add it to your project as a npm package. You can do this by running the following command in your project's root directory:
 
 ```
 npm i @digigov/docusaurus-terminology
 ```
 
+or
+
+```
+yarn add @digigov/docusaurus-terminology
+```
+
+Once the package is installed, you need to configure it in your Docusaurus site configuration file by adding the plugin to your `docusaurus.config.js` file:
+
+```
+module.exports = {
+    ...
+  plugins: [
+    '@digigov/docusaurus-terminology'
+  ],
+    ...
+};
+```
+
 ## Usage
 
-To use the terminology tool, simply add the markdown link format to your `*.mdx` file and reference it as a path. For example, if we have a term in `docs/terms/host`, all you need to do is add this markdown link in the page:
+To use the terminology tool, you need to create the terms folder under docs in order to have the required folder structure: `docs/terms`. After that you can create the `*.mdx` files and initialize them with the format of the following metadata header.
 
 ```
-[host](./docs/terms/host)
+---
+id: example-term
+title: Example term
+hoverText: This is an example term
+---
 ```
 
-This will render the text "host", and will add a link to the term, and when you hover it it will show the `hoverText` attribute of the text.
+To include the desired term in a documentation page, you can add the Markdown syntax for a hyperlink `[text](path)` in the page (eg `[This is the example-term](./docs/terms/example-term)`).
 
-Then, the plugin will replace the pattern with a React component that displays the term and definition. By default, the component will display the term in bold and the hover text in normal text.
+This renders the hyperlink "This is the example-term", and displays the "hoverText" attribute when you hover it.
 
 ## Example
 
-In order to give this a spin, you can use the [create-digigov-docs](https://www.npmjs.com/package/create-digigov-docs) by running the following command to generate your own docusaurus installation, which consists of our library and packages for terminology.
+In order to give this a spin, you can use the [create-digigov-docs](https://www.npmjs.com/package/create-digigov-docs) by running the following command to generate your own docusaurus installation, which consists of our library and packages for terminology:
+
+```
+yarn create digigov-docs <docs_dir>
+```
+
+or
 
 ```
 npx create-digigov-docs <docs_dir>
 ```
-* The tool will ask you for a few options to customize the newly created codebase. For documentation theme you can choose `@docusaurus/theme-classic`
+
+* The tool will ask you for a few options to customize the newly created codebase. For docusaurus documentation theme you can choose `@docusaurus/theme-classic`
 * This will create a directory named `<docs_dir>` and will install all dependencies required.
-* Enter to `<docs_dir>` and start the execution (eg `npm run start`). After that, you will be greeted with a new docusaurus website, on http://localhost:3000
+* Once the `<docs_dir>` folder is created, you can enter to it and start the execution with `npm run start` or `yarn start`. After that, you will be greeted with a new docusaurus website, on [http://localhost:3000](http://localhost:3000).
 
 ## Troubleshooting
 
-If you encounter any issues with the Docusaurus terminology tool, please check the following:
-* Ensure that you have installed the plugin correctly and added it to your site configuration file.
-* Make sure that the pattern you are using to define the term is correct.
+If you encounter any issues with the @digigov/docusaurus-terminology plugin, please check the following:
+* Ensure that you have installed it correctly and added it to your site configuration file.
+* Make sure that you add/edit `*.mdx` files under the `/docs/terms` directory and the hyperlink pattern `[text](path)` you are using to define the term is correct. Both the term's id and filename must match.
 * If you are still encountering issues, please submit a bug report or contact the plugin maintainer for support.
 
 ## Contributing
 
-If you would like to contribute to the development of the Docusaurus terminology tool, you can do so by submitting issues or pull requests on the GitHub repository.
+If you would like to contribute to the development of the @digigov/docusaurus-terminology plugin, you can do so by submitting issues or pull requests on the GitHub repository.
 
 ## License
-The Docusaurus terminology tool is released under the BSD-2-Clause.
+
+The @digigov/docusaurus-terminology plugin is released under the BSD-2-Clause.
 
