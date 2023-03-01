@@ -1,12 +1,12 @@
 {
-  "name": "@digigov/webpack-terms-replace-loader",
-  "version": "0.0.6",
+  "name": "@grnet/webpack-terms-replace-loader",
+  "version": "1.0.0",
   "main": "index.js",
   "license": "BSD-2-Clause",
   "private": false,
   "dependencies": {
     "parse-md": "2.0.4",
-    "@digigov/terminology-store": "0.3.4"
+    "@grnet/terminology-store": "1.0.0"
   },
   "scripts": {
     "build": "echo 'no build is required'"

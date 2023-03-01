@@ -5,7 +5,6 @@ const glossaryPath = path.resolve('.docusaurus/glossary.json');
 
 class TerminologyStore {
   constructor() {
-    // Why use a map??? JUST FOR FUN ¯\_(ツ)_/¯
     this.terms = {};
 
     if (!fs.existsSync(docusaurusPath)) {

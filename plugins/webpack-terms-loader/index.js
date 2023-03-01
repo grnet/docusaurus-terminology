@@ -1,6 +1,6 @@
 const path = require('path');
 const parseMD = require('parse-md').default;
-const store = require('@digigov/terminology-store');
+const store = require('@grnet/terminology-store');
 const remark = require('remark')
 const remarkHTML = require('remark-html')
 

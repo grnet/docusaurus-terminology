@@ -34,7 +34,7 @@ module.exports = function (context, options) {
               enforce: 'pre',
               use: [
                 {
-                  loader: require.resolve('@digigov/webpack-glossary-loader'),
+                  loader: require.resolve('@grnet/webpack-glossary-loader'),
                   options
                 }
               ]
@@ -44,7 +44,7 @@ module.exports = function (context, options) {
               enforce: 'pre',
               use: [
                 {
-                  loader: require.resolve('@digigov/webpack-terms-loader'),
+                  loader: require.resolve('@grnet/webpack-terms-loader'),
                   options
                 }
               ]
@@ -52,7 +52,7 @@ module.exports = function (context, options) {
           ];
           rule.use.push(
             {
-              loader: require.resolve('@digigov/webpack-terms-replace-loader'),
+              loader: require.resolve('@grnet/webpack-terms-replace-loader'),
               options
             }
           )

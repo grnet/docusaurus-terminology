@@ -21,31 +21,31 @@
   "variants": [],
   "projects": [
     {
-      "packageName": "@digigov/docusaurus-terminology",
+      "packageName": "@grnet/docusaurus-terminology",
       "projectFolder": "plugins/docusaurus-terminology"
     },
     {
-      "packageName": "@digigov/terminology-store",
+      "packageName": "@grnet/terminology-store",
       "projectFolder": "plugins/terminology-store"
     },
     {
-      "packageName": "@digigov/webpack-glossary-loader",
+      "packageName": "@grnet/webpack-glossary-loader",
       "projectFolder": "plugins/webpack-glossary-loader"
     },
     {
-      "packageName": "@digigov/webpack-terms-loader",
+      "packageName": "@grnet/webpack-terms-loader",
       "projectFolder": "plugins/webpack-terms-loader"
     },
     {
-      "packageName": "@digigov/webpack-terms-replace-loader",
+      "packageName": "@grnet/webpack-terms-replace-loader",
       "projectFolder": "plugins/webpack-terms-replace-loader"
     },
     {
-      "packageName": "@digigov/docusaurus-glossary-view",
+      "packageName": "@grnet/docusaurus-glossary-view",
       "projectFolder": "libs/glossary-view"
     },
     {
-      "packageName": "@digigov/docusaurus-term-preview",
+      "packageName": "@grnet/docusaurus-term-preview",
       "projectFolder": "libs/term-preview"
     }
   ]

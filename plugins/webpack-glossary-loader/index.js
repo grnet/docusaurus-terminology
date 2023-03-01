@@ -1,9 +1,9 @@
 const parseMD = require('parse-md').default;
-const store = require('@digigov/terminology-store');
+const store = require('@grnet/terminology-store');
 const path = require('path');
 const importStatement = `
 
-import Glossary from "@digigov/docusaurus-glossary-view";
+import Glossary from "@grnet/docusaurus-glossary-view";
 
 `;
 

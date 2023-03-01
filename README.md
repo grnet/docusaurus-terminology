@@ -9,7 +9,7 @@ This Docusaurus plugin allows you to use standout terms in your pages, which, wh
 ## How it works
 This plugin retrieves docs in two ways:
 
-1. Parses all `*.mdx` files in the `docs/` directory and replaces each pattern `[text](path)` (Markdown syntax for a hyperlink) with a `<a>` tag supporting tooltip functionality using the [@digigov/term-preview](https://www.npmjs.com/package/@digigov/docusaurus-term-preview) package that uses the [rc-tooltip](https://www.npmjs.com/package/rc-tooltip) under the hood.
+1. Parses all `*.mdx` files in the `docs/` directory and replaces each pattern `[text](path)` (Markdown syntax for a hyperlink) with a `<a>` tag supporting tooltip functionality using the [@grnet/term-preview](https://www.npmjs.com/package/@grnet/docusaurus-term-preview) package that uses the [rc-tooltip](https://www.npmjs.com/package/rc-tooltip) under the hood.
 2. Creates a glossary with all the terms from `*.mdx` files that are listed in the `docs/terms/`.
 
 In greater depth:
@@ -47,13 +47,13 @@ The plugin creates a glossary that aggregates all of the terms from the `docs/te
 To use this plugin, you have to add it to your project as a npm package. You can do this by running the following command in your project's root directory:
 
 ```
-npm i @digigov/docusaurus-terminology
+npm i @grnet/docusaurus-terminology
 ```
 
 or
 
 ```
-yarn add @digigov/docusaurus-terminology
+yarn add @grnet/docusaurus-terminology
 ```
 
 Once the package is installed, you need to configure it in your Docusaurus site configuration file by adding the plugin to your `docusaurus.config.js` file:
@@ -62,7 +62,7 @@ Once the package is installed, you need to configure it in your Docusaurus site 
 module.exports = {
     ...
   plugins: [
-    '@digigov/docusaurus-terminology'
+    '@grnet/docusaurus-terminology'
   ],
     ...
 };
@@ -104,16 +104,16 @@ npx create-digigov-docs <docs_dir>
 
 ## Troubleshooting
 
-If you encounter any issues with the @digigov/docusaurus-terminology plugin, please check the following:
+If you encounter any issues with the @grnet/docusaurus-terminology plugin, please check the following:
 * Ensure that you have installed it correctly and added it to your site configuration file.
 * Make sure that you add/edit `*.mdx` files under the `/docs/terms` directory and the hyperlink pattern `[text](path)` you are using to define the term is correct. Both the term's id and filename must match.
 * If you are still encountering issues, please submit a bug report or contact the plugin maintainer for support.
 
 ## Contributing
 
-If you would like to contribute to the development of the @digigov/docusaurus-terminology plugin, you can do so by submitting issues or pull requests on the GitHub repository.
+If you would like to contribute to the development of the @grnet/docusaurus-terminology plugin, you can do so by submitting issues or pull requests on the GitHub repository.
 
 ## License
 
-The @digigov/docusaurus-terminology plugin is released under the BSD-2-Clause.
+The @grnet/docusaurus-terminology plugin is released under the BSD-2-Clause.
 

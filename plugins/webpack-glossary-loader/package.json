@@ -1,12 +1,12 @@
 {
-  "name": "@digigov/webpack-glossary-loader",
-  "version": "0.3.6",
+  "name": "@grnet/webpack-glossary-loader",
+  "version": "1.0.0",
   "description": "Webpack loader for Docusaurus glossaries",
   "main": "index.js",
   "author": "GRNET Developers <devs@lists.grnet.gr>",
   "license": "BSD-2-Clause",
   "dependencies": {
-    "@digigov/terminology-store": "0.3.4",
+    "@grnet/terminology-store": "1.0.0",
     "parse-md": "2.0.4"
   },
   "scripts": {
