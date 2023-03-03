@@ -1,7 +1,9 @@
 {
   "name": "@grnet/webpack-terms-loader",
   "version": "1.0.0",
+  "description": "Webpack loader for terminology",
   "main": "index.js",
+  "author": "GRNET Developers <devs@lists.grnet.gr>",
   "license": "BSD-2-Clause",
   "private": false,
   "dependencies": {

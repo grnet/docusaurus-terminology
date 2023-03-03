@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Term preview component with tooltip",
   "main": "dist/index.js",
+  "author": "GRNET Developers <devs@lists.grnet.gr>",
   "license": "BSD-2-Clause",
   "publishConfig": {
     "access": "public"
@@ -16,7 +17,7 @@
     "build": "rollup -c --silent"
   },
   "peerDependencies": {
-    "@docusaurus/core": "2.0.1",
+    "@docusaurus/core": "2.2.0",
     "react": "16.14.0",
     "react-dom": "16.14.0"
   },
