@@ -1,16 +1,17 @@
 const parseMD = require('parse-md').default;
 const store = require('@grnet/terminology-store');
 const path = require('path');
+const pkgUp = require('pkg-up');
 const importStatement = `
 
 import Term from "@grnet/docusaurus-term-preview";
 
 `;
 
-const pkg = pkgUp.sync({ cwd: dir || process.cwd() });
+const pkg = pkgUp.sync({ cwd: process.cwd() });
 const root = path.dirname(pkg);
 
-module.exports = function (source) {
+module.exports = function(source) {
   const urlsRegex = /\[.*?\]\(.*?\)/gim;
   const urlRegex = /\[(.*?)\]\((.*?)\)/;
   const urls = source.match(urlsRegex) || [];

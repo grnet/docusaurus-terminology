@@ -7,7 +7,7 @@
   "license": "BSD-2-Clause",
   "private": false,
   "dependencies": {
-    "pkg-up": "4.0.0",
+    "pkg-up": "3.1.0",
     "parse-md": "2.0.4",
     "@grnet/terminology-store": "1.0.0"
   },

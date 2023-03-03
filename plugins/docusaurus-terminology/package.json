@@ -10,7 +10,9 @@
     "@grnet/webpack-glossary-loader": "1.0.0",
     "@grnet/webpack-terms-loader": "1.0.0",
     "@grnet/webpack-terms-replace-loader": "1.0.0",
-    "@grnet/terminology-store": "1.0.0"
+    "@grnet/terminology-store": "1.0.0",
+    "@grnet/docusaurus-term-preview": "1.0.0",
+    "@grnet/docusaurus-glossary-view": "1.0.0"
   },
   "scripts": {
     "build": "echo 'no build is required'"

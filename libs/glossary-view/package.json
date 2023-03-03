@@ -12,9 +12,9 @@
     "build": "rollup -c --silent"
   },
   "peerDependencies": {
-    "@docusaurus/core": "2.2.0",
-    "react": "16.14.0",
-    "react-dom": "16.14.0"
+    "@docusaurus/core": "2.3.1",
+    "react": "*",
+    "react-dom": "*"
   },
   "devDependencies": {
     "@babel/core": "7.12.13",
