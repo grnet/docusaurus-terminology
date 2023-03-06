@@ -4,7 +4,7 @@
 
 This Docusaurus plugin allows you to use standout terms in your pages, which, when hovered over, displays a short explanation, and when clicked, navigates you to the relevant page. The plugin parses all `*.mdx` files and replaces each Markdown hyperlink pattern with a `<a>` HTML tag supporting a tooltip functionality. Additionally, it generates a glossary with all terms corresponding to the `*.mdx` files.
 
-[gif]
+![Term in text example](static/img/terminology_example.gif)
 
 ## How it works
 This plugin retrieves docs in two ways:
@@ -18,7 +18,8 @@ In greater depth:
 
 The plugin needs the directory `docs/terms`, which contains all the terms you need for your website. The specific format for each term:
 
-In `docs/terms/example-term.mdx`:
+In `docs/terms/example-term.md`:
+
 ```
 ---
 id: example-term
@@ -28,6 +29,7 @@ hoverText: This is an example term
 
 Example body
 ```
+
 where:
 
 * `id`: the unique id of the docusaurus web page, this is docusaurus specific
@@ -47,7 +49,7 @@ The plugin creates a glossary that aggregates all of the terms from the `docs/te
 To use this plugin, you have to add it to your project as a npm package. You can do this by running the following command in your project's root directory:
 
 ```
-npm i @grnet/docusaurus-terminology
+npm i @grnet/docusaurus-terminology --save
 ```
 
 or
@@ -62,7 +64,11 @@ Once the package is installed, you need to configure it in your Docusaurus site 
 module.exports = {
     ...
   plugins: [
-    '@grnet/docusaurus-terminology'
+    ['@grnet/docusaurus-terminology', {
+      termsDir: './docs/terms',
+      docsDir: './docs/',
+      glossaryFilepath: './docs/glossary.md'
+    }],
   ],
     ...
 };
@@ -80,27 +86,21 @@ hoverText: This is an example term
 ---
 ```
 
+You should also create a new `./docs/glossary.md` file.
+
+```
+---
+id: glossary
+title: Glossary
+---
+
+This is my glossary file, I expect this to remain unaltered, and just append text below this line.
+
+```
+
 To include the desired term in a documentation page, you can add the Markdown syntax for a hyperlink `[text](path)` in the page (eg `[This is the example-term](./docs/terms/example-term)`).
 
 This renders the hyperlink "This is the example-term", and displays the "hoverText" attribute when you hover it.
-
-## Example
-
-In order to give this a spin, you can use the [create-digigov-docs](https://www.npmjs.com/package/create-digigov-docs) by running the following command to generate your own docusaurus installation, which consists of our library and packages for terminology:
-
-```
-yarn create digigov-docs <docs_dir>
-```
-
-or
-
-```
-npx create-digigov-docs <docs_dir>
-```
-
-* The tool will ask you for a few options to customize the newly created codebase. For docusaurus documentation theme you can choose `@docusaurus/theme-classic`
-* This will create a directory named `<docs_dir>` and will install all dependencies required.
-* Once the `<docs_dir>` folder is created, you can enter to it and start the execution with `npm run start` or `yarn start`. After that, you will be greeted with a new docusaurus website, on [http://localhost:3000](http://localhost:3000).
 
 ## Troubleshooting
 
