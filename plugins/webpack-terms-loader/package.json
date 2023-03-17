@@ -1,6 +1,6 @@
 {
   "name": "@grnet/webpack-terms-loader",
-  "version": "1.0.0",
+  "version": "1.0.0-rc.1",
   "description": "Webpack loader for terminology",
   "main": "index.js",
   "author": "GRNET Developers <devs@lists.grnet.gr>",
@@ -8,7 +8,7 @@
   "private": false,
   "dependencies": {
     "parse-md": "2.0.4",
-    "@grnet/terminology-store": "1.0.0",
+    "@grnet/terminology-store": "1.0.0-rc.1",
     "remark": "13.0.0",
     "remark-html": "13.0.2"
   },

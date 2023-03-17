@@ -15,7 +15,7 @@ dependencies:
   '@rush-temp/webpack-terms-loader': file:projects/webpack-terms-loader.tgz
   '@rush-temp/webpack-terms-replace-loader': file:projects/webpack-terms-replace-loader.tgz
   parse-md: 2.0.4
-  pkg-up: 4.0.0
+  pkg-up: 3.1.0
   postcss: 8.4.4
   postel: 0.1.4_react-dom@16.14.0+react@16.14.0
   rc-tooltip: 5.0.2_react-dom@16.14.0+react@16.14.0
@@ -5095,15 +5095,6 @@ packages:
       node: '>=10'
     resolution:
       integrity: sha512-78/PXT1wlLLDgTzDs7sjq9hzz0vXD+zn+7wypEe4fXQxCmdmqfGsEPQxmiCSQI3ajFV91bVSsvNtrJRiW6nGng==
-  /find-up/6.3.0:
-    dependencies:
-      locate-path: 7.2.0
-      path-exists: 5.0.0
-    dev: false
-    engines:
-      node: ^12.20.0 || ^14.13.1 || >=16.0.0
-    resolution:
-      integrity: sha512-v2ZsoEuVHYy8ZIlYqwPe/39Cy+cFDzp4dXPaxNvkEuouymu+2Jbz0PxpKarJHYJTmv2HWT3O382qY8l4jMWthw==
   /follow-redirects/1.15.2:
     dev: false
     engines:
@@ -6422,14 +6413,6 @@ packages:
       node: '>=10'
     resolution:
       integrity: sha512-iPZK6eYjbxRu3uB4/WZ3EsEIMJFMqAoopl3R+zuq0UjcAm/MO6KCweDgPfP3elTztoKP3KtnVHxTn2NHBSDVUw==
-  /locate-path/7.2.0:
-    dependencies:
-      p-locate: 6.0.0
-    dev: false
-    engines:
-      node: ^12.20.0 || ^14.13.1 || >=16.0.0
-    resolution:
-      integrity: sha512-gvVijfZvn7R+2qyPX8mAuKcFGDf6Nc61GdvGafQsHL0sBIxfKzA+usWn4GFC/bk+QdwPUD4kWFJLhElipq+0VA==
   /lodash.camelcase/4.3.0:
     dev: false
     resolution:
@@ -6948,14 +6931,6 @@ packages:
       node: '>=10'
     resolution:
       integrity: sha512-TYOanM3wGwNGsZN2cVTYPArw454xnXj5qmWF1bEoAc4+cU/ol7GVh7odevjp1FNHduHc3KZMcFduxU5Xc6uJRQ==
-  /p-limit/4.0.0:
-    dependencies:
-      yocto-queue: 1.0.0
-    dev: false
-    engines:
-      node: ^12.20.0 || ^14.13.1 || >=16.0.0
-    resolution:
-      integrity: sha512-5b0R4txpzjPWVw/cXXUResoD4hb6U/x9BH08L7nw+GN1sezDzPdxeRvpc9c433fZhBan/wusjbCsqwqm4EIBIQ==
   /p-locate/3.0.0:
     dependencies:
       p-limit: 2.3.0
@@ -6980,14 +6955,6 @@ packages:
       node: '>=10'
     resolution:
       integrity: sha512-LaNjtRWUBY++zB5nE/NwcaoMylSPk+S+ZHNB1TzdbMJMny6dynpAGt7X/tl/QYq3TIeE6nxHppbo2LGymrG5Pw==
-  /p-locate/6.0.0:
-    dependencies:
-      p-limit: 4.0.0
-    dev: false
-    engines:
-      node: ^12.20.0 || ^14.13.1 || >=16.0.0
-    resolution:
-      integrity: sha512-wPrq66Llhl7/4AGC6I+cqxT07LhXvWL08LNXz1fENOw0Ap4sRZZ/gZpTTJ5jpurzzzfS2W/Ge9BY3LgLjCShcw==
   /p-map/4.0.0:
     dependencies:
       aggregate-error: 3.1.0
@@ -7120,12 +7087,6 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-ak9Qy5Q7jYb2Wwcey5Fpvg2KoAc/ZIhLSLOSBmRmygPsGwkVVt0fZa0qrtMz+m6tJTAHfZQ8FnmB4MG4LWy7/w==
-  /path-exists/5.0.0:
-    dev: false
-    engines:
-      node: ^12.20.0 || ^14.13.1 || >=16.0.0
-    resolution:
-      integrity: sha512-RjhtfwJOxzcFmNOi6ltcbcu4Iu+FL3zEj83dk4kAS+fVpTxXLO1b38RvJgT/0QwvV/L3aY9TAnyv0EOqW4GoMQ==
   /path-is-absolute/1.0.1:
     dev: false
     engines:
@@ -7202,14 +7163,6 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-nDywThFk1i4BQK4twPQ6TA4RT8bDY96yeuCVBWL3ePARCiEKDRSrNGbFIgUJpLp+XeIR65v8ra7WuJOFUBtkMA==
-  /pkg-up/4.0.0:
-    dependencies:
-      find-up: 6.3.0
-    dev: false
-    engines:
-      node: ^12.20.0 || ^14.13.1 || >=16.0.0
-    resolution:
-      integrity: sha512-N4zdA4sfOe6yCv+ulPCmpnIBQ5I60xfhDr1otdBBhKte9QtEf3bhfrfkW7dTb+IQ0iEx4ZDzas0kc1o5rdWpYg==
   /postcss-calc/7.0.5:
     dependencies:
       postcss: 7.0.39
@@ -10104,12 +10057,6 @@ packages:
       node: '>=10'
     resolution:
       integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==
-  /yocto-queue/1.0.0:
-    dev: false
-    engines:
-      node: '>=12.20'
-    resolution:
-      integrity: sha512-9bnSc/HEW2uRy67wc+T8UwauLuPJVn28jb+GtJY16iiKWyvmYJRXVT4UamsAEGQfPohgr2q4Tq0sQbQlxTfi1g==
   /zwitch/1.0.5:
     dev: false
     resolution:
@@ -10130,7 +10077,7 @@ packages:
     dev: false
     name: '@rush-temp/docusaurus-glossary-view'
     resolution:
-      integrity: sha512-vHxKbB0LWD5kgwCot3iMvBGhfV15LdPusBcu/XVKE7NYvT4ybRO4y7irpjS7SKnAcmo8Dx/1FWmMVpAhtd0DzQ==
+      integrity: sha512-lnWiViXR/4QgsNGb8Lz8ezTyIUh185EhCOfQcQYFeiIXnU4mSDNRBEPsj0DTtbA+QSzoOlDI+GXJYk44ltAmOw==
       tarball: file:projects/docusaurus-glossary-view.tgz
     version: 0.0.0
   file:projects/docusaurus-term-preview.tgz:
@@ -10154,14 +10101,14 @@ packages:
     dev: false
     name: '@rush-temp/docusaurus-term-preview'
     resolution:
-      integrity: sha512-OWoWM4Xs/INE1VHQyEMlH9RO+zYu5QWjhlOdoUBFEHSIx/gHaGEG1zzsJZTP8ufh+bJdH04JwkrkRyNuVtBggQ==
+      integrity: sha512-Iz/FhDkyP1UVGR7iezmgOi/kRP8Ypxx8ZbxdM1VnN9gnXBpYaL8R/vLM81CE6/2QFEB7+sD13A+cvbIxL0Kuzw==
       tarball: file:projects/docusaurus-term-preview.tgz
     version: 0.0.0
   file:projects/docusaurus-terminology.tgz:
     dev: false
     name: '@rush-temp/docusaurus-terminology'
     resolution:
-      integrity: sha512-0MMBmwWIyUZxlNzVzdl3UojAjznSF6XWh71QpI3xVd1U9m3DkTTxu8jUiILLwcL+RvvN/edCjDRLJKtuvxoqrw==
+      integrity: sha512-lNbMDqW6yJxtDyh1JZBENzXsJvpBO6bfKJ3T0YRCjSf4xX0DO4oKP+9qeZt7WPskPh568049ruhxu2PSkwGH2A==
       tarball: file:projects/docusaurus-terminology.tgz
     version: 0.0.0
   file:projects/terminology-store.tgz:
@@ -10194,18 +10141,18 @@ packages:
   file:projects/webpack-terms-replace-loader.tgz:
     dependencies:
       parse-md: 2.0.4
-      pkg-up: 4.0.0
+      pkg-up: 3.1.0
     dev: false
     name: '@rush-temp/webpack-terms-replace-loader'
     resolution:
-      integrity: sha512-prR9H14FYG0TrjdVO/yk0sK3AUQ8SdpYxvq2kyfzk8b1IRzOt0J0tKJNbHgINpTDqx2mcmbf41pTPixYtlwVTw==
+      integrity: sha512-MtM7rJFTwNN/fDL661Tg+pwVmqhMGrezfNodznPwnpSibX0UPqtj0q+jrnS1R9F/CRJHUfXz0b20bckjt2D9zw==
       tarball: file:projects/webpack-terms-replace-loader.tgz
     version: 0.0.0
 specifiers:
   '@babel/core': 7.12.13
   '@babel/preset-env': 7.12.13
   '@babel/preset-react': 7.12.13
-  '@docusaurus/core': 2.2.0
+  '@docusaurus/core': ^2.0.0
   '@rollup/plugin-babel': 5.2.3
   '@rollup/plugin-commonjs': 17.1.0
   '@rollup/plugin-node-resolve': 11.1.1
@@ -10218,12 +10165,12 @@ specifiers:
   '@rush-temp/webpack-terms-loader': file:./projects/webpack-terms-loader.tgz
   '@rush-temp/webpack-terms-replace-loader': file:./projects/webpack-terms-replace-loader.tgz
   parse-md: 2.0.4
-  pkg-up: 4.0.0
+  pkg-up: 3.1.0
   postcss: 8.4.4
   postel: 0.1.4
   rc-tooltip: 5.0.2
-  react: '*'
-  react-dom: '*'
+  react: ^16.8.4 || ^17.0.0
+  react-dom: ^16.8.4 || ^17.0.0
   remark: 13.0.0
   remark-html: 13.0.2
   rollup: 2.38.5
