@@ -8,9 +8,9 @@
   "nodeSupportedVersionRange": ">=14.0.0",
   "gitPolicy": {},
   "repository": {
-    // "url": "https://github.com/microsoft/rush-example",
-    // "defaultBranch": "master",
-    // "defaultRemote": "origin"
+    "url": "https://github.com/grnet/docusaurus-terminology",
+    "defaultBranch": "main",
+    "defaultRemote": "origin"
   },
   "eventHooks": {
     "preRushInstall": [],
