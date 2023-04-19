@@ -20,7 +20,7 @@ module.exports = function(source) {
     source = source.replace(content, importStatement + content);
     for (const url of urls) {
       const [mdUrl, title, urlPath] = url.match(urlRegex);
-      const rel_path = path.relative(root, this.resourcePath);
+      const rel_path = path.posix.relative(root, this.resourcePath);
       const pathName = new URL(urlPath, `http://bla.com/${rel_path}`).pathname;
       if (pathName.includes(this.query.termsDir.replace(/\./, ''))) {
         const termKey =
