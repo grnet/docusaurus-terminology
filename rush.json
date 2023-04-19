@@ -47,6 +47,10 @@
     {
       "packageName": "@grnet/docusaurus-term-preview",
       "projectFolder": "libs/term-preview"
+    },
+    {
+      "packageName": "terminology-example",
+      "projectFolder": "examples/terminology-example"
     }
   ]
 }
