@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "packageName": "@grnet/webpack-terms-replace-loader",
+      "comment": "Fix issues related with file paths in win32 platform",
+      "type": "patch"
+    }
+  ],
+  "packageName": "@grnet/webpack-terms-replace-loader",
+  "email": "tsironis@admin.grnet.gr"
+}
