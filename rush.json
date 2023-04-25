@@ -2,13 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/rush.schema.json",
   "rushVersion": "5.46.1",
   "pnpmVersion": "5.15.2",
-  // "npmVersion": "4.5.0",
-  // "yarnVersion": "1.9.4",
   "pnpmOptions": {},
   "nodeSupportedVersionRange": ">=14.0.0",
   "gitPolicy": {},
   "repository": {
-    "url": "https://github.com/grnet/docusaurus-terminology",
+    "url": "git@github.com:grnet/docusaurus-terminology.git",
     "defaultBranch": "main",
     "defaultRemote": "origin"
   },
@@ -22,35 +20,43 @@
   "projects": [
     {
       "packageName": "@grnet/docusaurus-terminology",
-      "projectFolder": "plugins/docusaurus-terminology"
+      "projectFolder": "plugins/docusaurus-terminology",
+      "shouldPublish": true
     },
     {
       "packageName": "@grnet/terminology-store",
-      "projectFolder": "plugins/terminology-store"
+      "projectFolder": "plugins/terminology-store",
+      "shouldPublish": true
     },
     {
       "packageName": "@grnet/webpack-glossary-loader",
-      "projectFolder": "plugins/webpack-glossary-loader"
+      "projectFolder": "plugins/webpack-glossary-loader",
+      "shouldPublish": true
     },
     {
       "packageName": "@grnet/webpack-terms-loader",
-      "projectFolder": "plugins/webpack-terms-loader"
+      "projectFolder": "plugins/webpack-terms-loader",
+      "shouldPublish": true
     },
     {
       "packageName": "@grnet/webpack-terms-replace-loader",
-      "projectFolder": "plugins/webpack-terms-replace-loader"
+      "projectFolder": "plugins/webpack-terms-replace-loader",
+      "shouldPublish": true
     },
     {
       "packageName": "@grnet/docusaurus-glossary-view",
-      "projectFolder": "libs/glossary-view"
+      "projectFolder": "libs/glossary-view",
+      "shouldPublish": true
     },
     {
       "packageName": "@grnet/docusaurus-term-preview",
-      "projectFolder": "libs/term-preview"
+      "projectFolder": "libs/term-preview",
+      "shouldPublish": true
     },
     {
       "packageName": "terminology-example",
-      "projectFolder": "examples/terminology-example"
+      "projectFolder": "examples/terminology-example",
+      "shouldPublish": false
     }
   ]
 }
