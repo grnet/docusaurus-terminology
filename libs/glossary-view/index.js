@@ -35,7 +35,7 @@ const Glossary = (props) => {
               Object.keys(content).map(key => {
                 return (
                   <p key={key}>
-                    <a href={withBaseUrl(`/${key}`)}>{content[key].metadata.title}</a>: <span style={{ display: 'inline-flex' }} dangerouslySetInnerHTML={{ __html: content[key].metadata.hoverText }} />
+                    <a href={withBaseUrl(`${key.replace('/\\/g', '/')}`)}>{content[key].metadata.title}</a>: <span style={{ display: 'inline-flex' }} dangerouslySetInnerHTML={{ __html: content[key].metadata.hoverText }} />
                   </p>
                 )
               })

@@ -9,7 +9,7 @@ import Term from "@grnet/docusaurus-term-preview";
 `;
 
 const pkg = pkgUp.sync({ cwd: process.cwd() });
-const root = path.dirname(pkg);
+const root = process.platform === 'win32' ? path.win32.dirname(pkg) : path.dirname(pkg);
 
 module.exports = function(source) {
   const urlsRegex = /\[.*?\]\(.*?\)/gim;
@@ -20,7 +20,7 @@ module.exports = function(source) {
     source = source.replace(content, importStatement + content);
     for (const url of urls) {
       const [mdUrl, title, urlPath] = url.match(urlRegex);
-      const rel_path = path.posix.relative(root, this.resourcePath);
+      const rel_path = process.platform === 'win32' ? path.win32.relative(root, this.resourcePath) : path.relative(root, this.resourcePath);
       const pathName = new URL(urlPath, `http://bla.com/${rel_path}`).pathname;
       if (pathName.includes(this.query.termsDir.replace(/\./, ''))) {
         const termKey =
