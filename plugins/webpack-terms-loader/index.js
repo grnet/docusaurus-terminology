@@ -5,12 +5,22 @@ const remark = require('remark')
 const remarkHTML = require('remark-html')
 
 module.exports = function (source) {
-  const regex = new RegExp(
+  const unixRegex = new RegExp(
     `(${this.query.termsDir
       .replace(/^\.\//, '')
       .replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}.*?)\.(md|mdx)`
   );
-  const termMatch = this.resourcePath.match(regex);
+  const winRegex = new RegExp(
+    `(${this.query.termsDir
+      .replace(/\//g, "\\")
+      .replace(/\./, "")
+      .replace(/[*+?^${}()|[\]\\]/g, '\\$&')}.*?)\.(md|mdx)`
+  );
+  const unixResourcePath = this.resourcePath
+  const winResourcePath = this.resourcePath.replace(/\\/, "\\\\")
+
+  const termMatch = process.platform === 'win32' ? winResourcePath.match(winRegex) : unixResourcePath.match(unixRegex);
+
   if (termMatch) {
     const data = parseMD(source);
     data.metadata.hoverText = data.metadata.hoverText ? remark()

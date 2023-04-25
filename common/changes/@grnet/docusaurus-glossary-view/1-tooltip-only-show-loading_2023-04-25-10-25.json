@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "packageName": "@grnet/docusaurus-glossary-view",
+      "comment": "Fix issues related with file paths in win32 platform",
+      "type": "patch"
+    }
+  ],
+  "packageName": "@grnet/docusaurus-glossary-view",
+  "email": "tsironis@admin.grnet.gr"
+}

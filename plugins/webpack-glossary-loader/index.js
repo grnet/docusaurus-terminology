@@ -7,12 +7,12 @@ import Glossary from "@grnet/docusaurus-glossary-view";
 
 `;
 
-module.exports = function (source) {
+module.exports = function(source) {
   const urls = store.terms;
   this.cacheable(false)
-  this.addDependency(path.join(this.query.docsDir, 'glossary.json'))
+  this.addDependency(path.posix.join(this.query.docsDir, 'glossary.json'))
   this.emitFile(
-    path.join(this.query.docsDir, 'glossary.json'),
+    path.posix.join(this.query.docsDir, 'glossary.json'),
     JSON.stringify(store.terms)
   )
   const { content } = parseMD(source);

@@ -1,14 +1,31 @@
 const fs = require('fs')
 const path = require('path')
 module.exports = function (context, options) {
-  const formattedTermsPath = options.termsDir
-    .replace(/^\.\//, '')
-    .replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-  const termsRegex = new RegExp(`${formattedTermsPath}.*?\.mdx?$`);
-  const formattedGlossaryPath = options.glossaryFilepath
-    .replace(/^\.\//, '')
-    .replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-  const glossaryRegex = new RegExp(`${formattedGlossaryPath}`);
+
+  const unixFormattedTermsPath = options.termsDir
+  .replace(/^\.\//, '')
+  .replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+  const winFormattedTermsPath = options.termsDir
+  .replace(/\//g, "\\")
+  .replace(/\./, "")
+  .replace(/[*+?^${}()|[\]\\]/g, '\\$&');
+
+  const termsPath = process.platform === 'win32' ? winFormattedTermsPath : unixFormattedTermsPath;
+  const termsRegex = new RegExp(`${termsPath}.*?\.mdx?$`);
+
+  const unixFormattedGlossaryPath = options.glossaryFilepath
+  .replace(/^\.\//, '')
+  .replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+  const winFormattedGlossaryPath = options.glossaryFilepath
+  .replace(/\//g, "\\")
+  .replace(/\./, "")
+  .replace(/[*+?^${}()|[\]\\]/g, '\\$&');
+
+  const glossaryPath = process.platform === 'win32' ? winFormattedGlossaryPath : unixFormattedGlossaryPath;
+  const glossaryRegex = new RegExp(`${glossaryPath}`);
+
   try {
     fs.rmdirSync('node_modules/.cache', { recursive: true })
   } catch (err) {
