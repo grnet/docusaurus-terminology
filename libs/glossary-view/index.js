@@ -8,8 +8,7 @@ const Glossary = (props) => {
 
   useEffect(() => {
     if (typeof window !== undefined) {
-      const url = document.location.pathname.replace(/\/$/, '');
-      const JSONurl = `${url}.json`;
+      const JSONurl = withBaseUrl('docs/glossary.json');
       if (!content) {
         if (!window._cachedGlossary) {
           fetch(JSONurl)
