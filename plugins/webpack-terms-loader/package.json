@@ -1,6 +1,6 @@
 {
   "name": "@grnet/webpack-terms-loader",
-  "version": "1.0.0-rc.2",
+  "version": "1.0.0-rc.3",
   "description": "Webpack loader for terminology",
   "main": "index.js",
   "author": "GRNET Developers <devs@lists.grnet.gr>",

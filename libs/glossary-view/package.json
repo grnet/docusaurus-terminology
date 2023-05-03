@@ -1,6 +1,6 @@
 {
   "name": "@grnet/docusaurus-glossary-view",
-  "version": "1.0.0-rc.2",
+  "version": "1.0.0-rc.3",
   "description": "Glossary view component",
   "main": "dist/index.js",
   "author": "GRNET Developers <devs@lists.grnet.gr>",
