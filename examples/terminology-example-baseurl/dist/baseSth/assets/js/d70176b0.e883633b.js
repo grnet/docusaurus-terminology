@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkterminology_example=self.webpackChunkterminology_example||[]).push([[9164],{4469:e=>{e.exports=JSON.parse('{"name":"docusaurus-plugin-content-blog","id":"default"}')}}]);

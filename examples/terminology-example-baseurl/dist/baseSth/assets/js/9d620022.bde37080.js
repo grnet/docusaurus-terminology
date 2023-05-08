@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkterminology_example=self.webpackChunkterminology_example||[]).push([[4926],{5820:e=>{e.exports=JSON.parse('{"label":"facebook","permalink":"/baseSth/blog/tags/facebook","allTagsPath":"/baseSth/blog/tags","count":1}')}}]);

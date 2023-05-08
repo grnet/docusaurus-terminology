@@ -57,6 +57,11 @@
       "packageName": "terminology-example",
       "projectFolder": "examples/terminology-example",
       "shouldPublish": false
+    },
+    {
+      "packageName": "terminology-example-baseurl",
+      "projectFolder": "examples/terminology-example-baseurl",
+      "shouldPublish": false
     }
   ]
 }
