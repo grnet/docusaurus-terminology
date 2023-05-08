@@ -29,7 +29,7 @@ module.exports = function(source) {
         const metadata = store.terms[termKey];
         source = source.replace(
           mdUrl,
-          `<Term pathName="${termKey}">${title}</Term>`
+          `<Term pathName="${termKey.replace(/\d+-/, '')}">${title}</Term>`
         );
       }
     }
