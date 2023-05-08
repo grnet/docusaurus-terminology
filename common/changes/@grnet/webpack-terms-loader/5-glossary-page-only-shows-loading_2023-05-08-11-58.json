@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "packageName": "@grnet/webpack-terms-loader",
+      "comment": "Add support for ordered resourcePath",
+      "type": "patch"
+    }
+  ],
+  "packageName": "@grnet/webpack-terms-loader",
+  "email": "tsironis@admin.grnet.gr"
+}
