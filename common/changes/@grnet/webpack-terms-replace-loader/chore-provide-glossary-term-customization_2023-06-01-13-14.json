@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "packageName": "@grnet/webpack-terms-replace-loader",
+      "comment": "Replace the static importStatement with a dynamic one",
+      "type": "minor"
+    }
+  ],
+  "packageName": "@grnet/webpack-terms-replace-loader",
+  "email": "vasiakoum@admin.grnet.gr"
+}

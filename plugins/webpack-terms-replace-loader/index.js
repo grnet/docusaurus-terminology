@@ -2,12 +2,6 @@ const parseMD = require('parse-md').default;
 const store = require('@grnet/terminology-store');
 const path = require('path');
 const pkgUp = require('pkg-up');
-const importStatement = `
-
-import Term from "@grnet/docusaurus-term-preview";
-
-`;
-
 const pkg = pkgUp.sync({ cwd: process.cwd() });
 const root = process.platform === 'win32' ? path.win32.dirname(pkg) : path.dirname(pkg);
 
@@ -15,6 +9,11 @@ module.exports = function(source) {
   const urlsRegex = /\[.*?\]\(.*?\)/gim;
   const urlRegex = /\[(.*?)\]\((.*?)\)/;
   const urls = source.match(urlsRegex) || [];
+  const importStatement = `
+
+  import Term from "${ this.query.termPreviewComponentPath || "@grnet/docusaurus-term-preview"}";
+
+  `;
   if (urls.length > 0) {
     const { content } = parseMD(source);
     source = source.replace(content, importStatement + content);
