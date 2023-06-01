@@ -1,0 +1,25 @@
+{
+  "name": "@grnet/webpack-terms-replace-loader",
+  "entries": [
+    {
+      "version": "1.0.0",
+      "tag": "@grnet/webpack-terms-replace-loader_v1.0.0",
+      "date": "Thu, 01 Jun 2023 13:22:31 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Fix issues related with file paths in win32 platform"
+          },
+          {
+            "comment": "Add support for ordered resourcePath"
+          }
+        ],
+        "minor": [
+          {
+            "comment": "Replace the static importStatement with a dynamic one"
+          }
+        ]
+      }
+    }
+  ]
+}

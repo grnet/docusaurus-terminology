@@ -1,6 +1,6 @@
 {
   "name": "@grnet/webpack-terms-replace-loader",
-  "version": "1.0.0-rc.4",
+  "version": "1.0.0",
   "description": "Webpack loader for replacing terms in markdown files",
   "main": "index.js",
   "author": "GRNET Developers <devs@lists.grnet.gr>",

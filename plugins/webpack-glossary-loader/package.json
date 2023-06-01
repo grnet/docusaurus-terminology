@@ -1,6 +1,6 @@
 {
   "name": "@grnet/webpack-glossary-loader",
-  "version": "1.0.0-rc.4",
+  "version": "1.0.0",
   "description": "Webpack loader for Docusaurus glossaries",
   "main": "index.js",
   "author": "GRNET Developers <devs@lists.grnet.gr>",

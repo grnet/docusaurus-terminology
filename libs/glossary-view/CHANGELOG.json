@@ -1,0 +1,23 @@
+{
+  "name": "@grnet/docusaurus-glossary-view",
+  "entries": [
+    {
+      "version": "1.0.0",
+      "tag": "@grnet/docusaurus-glossary-view_v1.0.0",
+      "date": "Thu, 01 Jun 2023 13:22:31 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Fix issues related with file paths in win32 platform"
+          },
+          {
+            "comment": "Fix the loading of glossary.json when the glossary.md is not located in the root of docs directory, but in a subfolder of it"
+          },
+          {
+            "comment": "Add support for ordered resourcePath"
+          }
+        ]
+      }
+    }
+  ]
+}

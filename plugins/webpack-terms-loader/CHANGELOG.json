@@ -1,0 +1,20 @@
+{
+  "name": "@grnet/webpack-terms-loader",
+  "entries": [
+    {
+      "version": "1.0.0",
+      "tag": "@grnet/webpack-terms-loader_v1.0.0",
+      "date": "Thu, 01 Jun 2023 13:22:31 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Fix issues related with file paths in win32 platform"
+          },
+          {
+            "comment": "Add support for ordered resourcePath"
+          }
+        ]
+      }
+    }
+  ]
+}

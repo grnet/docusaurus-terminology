@@ -1,0 +1,31 @@
+{
+  "name": "@grnet/docusaurus-terminology",
+  "entries": [
+    {
+      "version": "1.0.0",
+      "tag": "@grnet/docusaurus-terminology_v1.0.0",
+      "date": "Thu, 01 Jun 2023 13:22:31 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Fix issues related with file paths in win32 platform"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"@grnet/webpack-glossary-loader\" from `1.0.0-rc.4` to `1.0.0`"
+          },
+          {
+            "comment": "Updating dependency \"@grnet/webpack-terms-loader\" from `1.0.0-rc.4` to `1.0.0`"
+          },
+          {
+            "comment": "Updating dependency \"@grnet/webpack-terms-replace-loader\" from `1.0.0-rc.4` to `1.0.0`"
+          },
+          {
+            "comment": "Updating dependency \"@grnet/docusaurus-glossary-view\" from `1.0.0-rc.4` to `1.0.0`"
+          }
+        ]
+      }
+    }
+  ]
+}

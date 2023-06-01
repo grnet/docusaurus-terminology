@@ -1,18 +1,18 @@
 {
   "name": "@grnet/docusaurus-terminology",
-  "version": "1.0.0-rc.4",
+  "version": "1.0.0",
   "description": "Docusaurus plugin for managing terminologies",
   "main": "index.js",
   "author": "GRNET Developers <devs@lists.grnet.gr>",
   "license": "BSD-2-Clause",
   "private": false,
   "dependencies": {
-    "@grnet/webpack-glossary-loader": "1.0.0-rc.4",
-    "@grnet/webpack-terms-loader": "1.0.0-rc.4",
-    "@grnet/webpack-terms-replace-loader": "1.0.0-rc.4",
+    "@grnet/webpack-glossary-loader": "1.0.0",
+    "@grnet/webpack-terms-loader": "1.0.0",
+    "@grnet/webpack-terms-replace-loader": "1.0.0",
     "@grnet/terminology-store": "1.0.0-rc.1",
     "@grnet/docusaurus-term-preview": "1.0.0-rc.1",
-    "@grnet/docusaurus-glossary-view": "1.0.0-rc.4"
+    "@grnet/docusaurus-glossary-view": "1.0.0"
   },
   "scripts": {
     "build": "echo 'no build is required'"
