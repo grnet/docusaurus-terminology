@@ -38,14 +38,14 @@ module.exports = {
 
 There is the ability to use custom components for the glossary file and term preview tooltip, instead of using the ones provided by `@grnet/docusaurus-term-preview` and `@grnet/docusaurus-glossary-view`.
 
-To modify the default options, add the fields `glossaryComponentPath`, `termPreviewComponentPath` in the plugins section to provide the corresponding component paths:
+To modify the default options, add the fields `glossaryComponentPath`, `termPreviewComponentPath` in the plugins section to provide the corresponding component paths (**relative to the `/docs` folder**):
 
 ```
 plugins: [
     ['@grnet/docusaurus-terminology', {
       ...
-      glossaryComponentPath: 'path/to/your/component',
-      termPreviewComponentPath: 'path/to/your/component',
+      glossaryComponentPath: 'relative/path/to/your/component',
+      termPreviewComponentPath: 'relative/path/to/your/component',
     }],
   ],
 ```
