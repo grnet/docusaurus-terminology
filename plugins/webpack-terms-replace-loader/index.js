@@ -6,7 +6,7 @@ const pkg = pkgUp.sync({ cwd: process.cwd() });
 const root = process.platform === 'win32' ? path.win32.dirname(pkg) : path.dirname(pkg);
 
 module.exports = function(source) {
-  const urlsRegex = /\[.*?\]\(.*?\)/gim;
+  const urlsRegex = /(?<!!)\[[^\]]+\]\([^)]+\)/g;
   const urlRegex = /\[(.*?)\]\((.*?)\)/;
   const urls = source.match(urlsRegex) || [];
   const importStatement = `
