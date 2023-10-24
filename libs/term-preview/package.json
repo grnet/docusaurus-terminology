@@ -1,6 +1,6 @@
 {
   "name": "@grnet/docusaurus-term-preview",
-  "version": "1.0.0-rc.1",
+  "version": "1.0.1",
   "description": "Term preview component with tooltip",
   "main": "dist/index.js",
   "author": "GRNET Developers <devs@lists.grnet.gr>",
