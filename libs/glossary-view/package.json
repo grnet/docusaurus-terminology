@@ -17,7 +17,7 @@
     "react-dom": "^16.8.4 || ^17.0.0"
   },
   "devDependencies": {
-    "@babel/core": "7.12.13",
+    "@babel/core": "7.23.2",
     "@babel/preset-env": "7.12.13",
     "@babel/preset-react": "7.12.13",
     "@rollup/plugin-babel": "5.2.3",
