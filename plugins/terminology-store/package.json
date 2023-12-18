@@ -1,6 +1,6 @@
 {
   "name": "@grnet/terminology-store",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Terminology store for webpack loader & other plugins",
   "main": "index.js",
   "author": "GRNET Developers <devs@lists.grnet.gr>",
