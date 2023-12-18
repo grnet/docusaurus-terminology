@@ -1,6 +1,6 @@
 {
   "name": "@grnet/docusaurus-term-preview",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Term preview component with tooltip",
   "main": "dist/index.js",
   "author": "GRNET Developers <devs@lists.grnet.gr>",
@@ -9,7 +9,7 @@
     "access": "public"
   },
   "dependencies": {
-    "postel": "0.1.4",
+    "postel": "0.1.5",
     "rc-tooltip": "5.0.2",
     "rollup": "2.38.5"
   },
@@ -17,9 +17,9 @@
     "build": "rollup -c --silent"
   },
   "peerDependencies": {
-    "@docusaurus/core": "^2.0.0",
-    "react": "^16.8.4 || ^17.0.0",
-    "react-dom": "^16.8.4 || ^17.0.0"
+    "@docusaurus/core": "^3.0.1",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
   },
   "devDependencies": {
     "@babel/core": "7.12.13",

@@ -3,7 +3,7 @@
   "rushVersion": "5.46.1",
   "pnpmVersion": "5.15.2",
   "pnpmOptions": {},
-  "nodeSupportedVersionRange": ">=14.0.0",
+  "nodeSupportedVersionRange": ">=18.0.0",
   "gitPolicy": {},
   "repository": {
     "url": "git@github.com:grnet/docusaurus-terminology.git",
