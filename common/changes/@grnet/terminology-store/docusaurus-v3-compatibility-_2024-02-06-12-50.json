@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "@grnet/terminology-store",
+      "comment": "Upgrade docusaurus version to v3",
+      "type": "major"
+    }
+  ],
+  "packageName": "@grnet/terminology-store"
+}

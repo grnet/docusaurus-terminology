@@ -10,9 +10,7 @@ module.exports = function(source) {
   const urlRegex = /\[(.*?)\]\((.*?)\)/;
   const urls = source.match(urlsRegex) || [];
   const importStatement = `
-
-  import Term from "${ this.query.termPreviewComponentPath || "@grnet/docusaurus-term-preview"}";
-
+import Term from "${ this.query.termPreviewComponentPath || "@grnet/docusaurus-term-preview"}";
   `;
   if (urls.length > 0) {
     const { content } = parseMD(source);
