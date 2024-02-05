@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "@grnet/docusaurus-term-preview",
+      "comment": "Upgrade docusaurus version to v3",
+      "type": "major"
+    }
+  ],
+  "packageName": "@grnet/docusaurus-term-preview"
+}

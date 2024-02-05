@@ -5,9 +5,7 @@ const path = require('path');
 module.exports = function(source) {
   const urls = store.terms;
   const importStatement = `
-
-  import Glossary from "${ this.query.glossaryComponentPath || "@grnet/docusaurus-glossary-view"}";
-
+import Glossary from "${ this.query.glossaryComponentPath || "@grnet/docusaurus-glossary-view"}";
   `;
   this.cacheable(false)
   this.addDependency(path.posix.join(this.query.docsDir, 'glossary.json'))

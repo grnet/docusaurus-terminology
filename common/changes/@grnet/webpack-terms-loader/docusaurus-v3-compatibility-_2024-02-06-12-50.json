@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "@grnet/webpack-terms-loader",
+      "comment": "Upgrade docusaurus version to v3",
+      "type": "major"
+    }
+  ],
+  "packageName": "@grnet/webpack-terms-loader"
+}
