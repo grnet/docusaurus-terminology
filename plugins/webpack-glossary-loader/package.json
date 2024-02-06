@@ -1,13 +1,13 @@
 {
   "name": "@grnet/webpack-glossary-loader",
-  "version": "1.0.1",
+  "version": "2.0.0-rc",
   "description": "Webpack loader for Docusaurus glossaries",
   "main": "index.js",
   "author": "GRNET Developers <devs@lists.grnet.gr>",
   "license": "BSD-2-Clause",
   "private": false,
   "dependencies": {
-    "@grnet/terminology-store": "1.0.1",
+    "@grnet/terminology-store": "2.0.0-rc",
     "parse-md": "2.0.4"
   },
   "scripts": {

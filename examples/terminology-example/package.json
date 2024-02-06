@@ -16,14 +16,14 @@
   "dependencies": {
     "@docusaurus/core": "^3.0.1",
     "@docusaurus/preset-classic": "^3.0.1",
-    "@grnet/docusaurus-terminology": "1.0.1",
+    "@grnet/docusaurus-terminology": "2.0.0-rc",
     "@mdx-js/react": "^3.0.0",
     "clsx": "^1.2.1",
     "prism-react-renderer": "^2.1.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "@grnet/docusaurus-term-preview": "1.0.1",
-    "@grnet/docusaurus-glossary-view": "1.0.1"
+    "@grnet/docusaurus-term-preview": "2.0.0-rc",
+    "@grnet/docusaurus-glossary-view": "2.0.0-rc"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "3.0.0"
