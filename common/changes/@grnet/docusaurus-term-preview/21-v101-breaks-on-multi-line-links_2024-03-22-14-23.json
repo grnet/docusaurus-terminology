@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "@grnet/docusaurus-term-preview",
+      "comment": "Remove descendant div of paragraph causing a React warning to be thrown",
+      "type": "patch"
+    }
+  ],
+  "packageName": "@grnet/docusaurus-term-preview"
+}

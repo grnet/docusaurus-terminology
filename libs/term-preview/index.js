@@ -35,7 +35,7 @@ const Content = React.forwardRef(({ setContent, content, url, theme }, ref) => {
       {content ? (
         <>
           <h4>{content.metadata.title}</h4>
-          <div dangerouslySetInnerHTML={{__html: content.metadata.hoverText}}></div>
+          <div dangerouslySetInnerHTML={{ __html: content.metadata.hoverText }}></div>
         </>
       ) : (
         "loading..."
@@ -51,7 +51,7 @@ const Tooltip = (props) => {
 
   return (
     <BrowserOnly
-      fallback={<div>The fallback content to display on prerendering</div>}
+      fallback={<>The fallback content to display on prerendering</>}
     >
       {() => (
         <RcTooltip
