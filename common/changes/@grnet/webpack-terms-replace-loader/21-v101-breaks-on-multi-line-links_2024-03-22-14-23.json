@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "@grnet/webpack-terms-replace-loader",
+      "comment": "Fix multi-line links with hover tooltips",
+      "type": "patch"
+    }
+  ],
+  "packageName": "@grnet/webpack-terms-replace-loader"
+}

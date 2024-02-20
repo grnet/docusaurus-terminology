@@ -6,6 +6,10 @@ This Docusaurus plugin allows you to use standout terms in your pages, which, wh
 
 ![Term in text example](static/img/terminology_example.gif)
 
+
+Check for live example in [codesandbox](https://codesandbox.io/p/sandbox/sharp-sara-jh675w)
+
+
 ## Installation
 
 To use this plugin, you have to add it to your project as a npm package. You can do this by running the following command in your project's root directory:
