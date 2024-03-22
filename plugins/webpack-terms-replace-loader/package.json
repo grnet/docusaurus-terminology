@@ -1,6 +1,6 @@
 {
   "name": "@grnet/webpack-terms-replace-loader",
-  "version": "2.0.0-rc",
+  "version": "2.0.0-rc.1",
   "description": "Webpack loader for replacing terms in markdown files",
   "main": "index.js",
   "author": "GRNET Developers <devs@lists.grnet.gr>",
@@ -9,7 +9,7 @@
   "dependencies": {
     "pkg-up": "3.1.0",
     "parse-md": "2.0.4",
-    "@grnet/terminology-store": "2.0.0-rc"
+    "@grnet/terminology-store": "2.0.0-rc.1"
   },
   "scripts": {
     "build": "echo 'no build is required'"
