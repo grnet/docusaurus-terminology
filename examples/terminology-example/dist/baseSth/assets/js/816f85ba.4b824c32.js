@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkterminology_example=self.webpackChunkterminology_example||[]).push([[1848],{3319:e=>{e.exports=JSON.parse('{"label":"docusaurus","permalink":"/baseSth/blog/tags/docusaurus","allTagsPath":"/baseSth/blog/tags","count":4}')}}]);
