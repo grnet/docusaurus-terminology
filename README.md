@@ -132,6 +132,14 @@ If you encounter any issues with the @b-kamphorst/docusaurus-terminology plugin,
 
 If you would like to contribute to the development of the @b-kamphorst/docusaurus-terminology plugin, you can do so by submitting issues or pull requests on the GitHub repository.
 
+To develop and test locally, run
+
+`rush update`
+
+and
+
+`rush build`
+
 ## License
 
 The @b-kamphorst/docusaurus-terminology plugin is released under the BSD-2-Clause.
