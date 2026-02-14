@@ -27,7 +27,7 @@ module.exports = function (source) {
       : source;
 
     // Prepare the import statement
-    const importStatement = `import Term from "${this.query.termPreviewComponentPath || "@b-kamphorst/docusaurus-term-preview"}";\n`;
+    const importStatement = `import Term from "${this.query.termPreviewComponentPath || "@b-kamphorst/docusaurus-term-preview"}";\n\n`;
 
     // Only add the import if it’s not already in the source
     const contentAlreadyHasImport =
