@@ -12078,10 +12078,9 @@ packages:
     dev: false
 
   file:projects/webpack-terms-replace-loader.tgz:
-    resolution: {integrity: sha512-3EN4myXaagNW3Eigk7kEiDq7pLV2mbW//+TnhLAWgEerUZypPi5BtSwbtiskGL/LX5v76r7x6D4k3qguovY5Qw==, tarball: file:projects/webpack-terms-replace-loader.tgz}
+    resolution: {integrity: sha512-bAEwwXqiZavKFP6cliESe8BZYRR9GOmJtdc8Pj5Tpe5YDK9KqxXZ0xrfE/dD8gwOMgummBZi4YDroz/RW88JjA==, tarball: file:projects/webpack-terms-replace-loader.tgz}
     name: '@rush-temp/webpack-terms-replace-loader'
     version: 0.0.0
     dependencies:
-      parse-md: 2.0.4
       pkg-up: 3.1.0
     dev: false

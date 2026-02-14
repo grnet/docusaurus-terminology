@@ -1,4 +1,3 @@
-const parseMD = require("parse-md").default;
 const path = require("path");
 const pkgUp = require("pkg-up");
 const pkg = pkgUp.sync({ cwd: process.cwd() });
@@ -21,7 +20,7 @@ module.exports = function (source) {
 
   if (urls.length > 0) {
     // Extract front matter (--- ... ---)
-    const frontMatterMatch = source.match(/^---\n[\s\S]*?\n---\n/);
+    const frontMatterMatch = source.match(/^---\r?\n[\s\S]*?\r?\n---(\r?\n|$)/);
     const frontMatter = frontMatterMatch ? frontMatterMatch[0] : "";
     const contentWithoutFrontMatter = frontMatterMatch
       ? source.slice(frontMatterMatch[0].length)
@@ -34,11 +33,10 @@ module.exports = function (source) {
     const contentAlreadyHasImport =
       contentWithoutFrontMatter.includes(importStatement);
 
-    const parsed = require("parse-md").default(contentWithoutFrontMatter);
     source =
       frontMatter +
       (contentAlreadyHasImport ? "" : importStatement) +
-      parsed.content;
+      contentWithoutFrontMatter;
 
     for (const url of urls) {
       const [mdUrl, title, urlPath] = url.match(urlRegex);
