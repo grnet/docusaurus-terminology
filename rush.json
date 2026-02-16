@@ -1,12 +1,12 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/rush.schema.json",
-  "rushVersion": "5.113.4",
-  "pnpmVersion": "5.15.2",
+  "rushVersion": "5.140.0",
+  "pnpmVersion": "8.15.5",
   "pnpmOptions": {},
   "nodeSupportedVersionRange": ">=18.0.0",
   "gitPolicy": {},
   "repository": {
-    "url": "git@github.com:grnet/docusaurus-terminology.git",
+    "url": "git@github.com:b-kamphorst/docusaurus-terminology.git",
     "defaultBranch": "main",
     "defaultRemote": "origin"
   },
@@ -19,37 +19,37 @@
   "variants": [],
   "projects": [
     {
-      "packageName": "@grnet/docusaurus-terminology",
+      "packageName": "@b-kamphorst/docusaurus-terminology",
       "projectFolder": "plugins/docusaurus-terminology",
       "shouldPublish": true
     },
     {
-      "packageName": "@grnet/terminology-store",
+      "packageName": "@b-kamphorst/terminology-store",
       "projectFolder": "plugins/terminology-store",
       "shouldPublish": true
     },
     {
-      "packageName": "@grnet/webpack-glossary-loader",
+      "packageName": "@b-kamphorst/webpack-glossary-loader",
       "projectFolder": "plugins/webpack-glossary-loader",
       "shouldPublish": true
     },
     {
-      "packageName": "@grnet/webpack-terms-loader",
+      "packageName": "@b-kamphorst/webpack-terms-loader",
       "projectFolder": "plugins/webpack-terms-loader",
       "shouldPublish": true
     },
     {
-      "packageName": "@grnet/webpack-terms-replace-loader",
+      "packageName": "@b-kamphorst/webpack-terms-replace-loader",
       "projectFolder": "plugins/webpack-terms-replace-loader",
       "shouldPublish": true
     },
     {
-      "packageName": "@grnet/docusaurus-glossary-view",
+      "packageName": "@b-kamphorst/docusaurus-glossary-view",
       "projectFolder": "libs/glossary-view",
       "shouldPublish": true
     },
     {
-      "packageName": "@grnet/docusaurus-term-preview",
+      "packageName": "@b-kamphorst/docusaurus-term-preview",
       "projectFolder": "libs/term-preview",
       "shouldPublish": true
     },

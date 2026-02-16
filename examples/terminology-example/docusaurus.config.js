@@ -58,7 +58,7 @@ const config = {
   ],
 
   plugins: [
-    ['@grnet/docusaurus-terminology', {
+    ['@b-kamphorst/docusaurus-terminology', {
       termsDir: './docs/terms',
       docsDir: './docs/',
       glossaryFilepath: './docs/glossary.md'

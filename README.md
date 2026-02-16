@@ -1,4 +1,4 @@
-# @grnet/docusaurus-terminology
+# @b-kamphorst/docusaurus-terminology
 
 ## Overview
 
@@ -6,47 +6,42 @@ This Docusaurus plugin allows you to use standout terms in your pages, which, wh
 
 ![Term in text example](static/img/terminology_example.gif)
 
-
 Check for live example in [codesandbox](https://codesandbox.io/p/sandbox/sharp-sara-jh675w)
-
 
 ## Installation
 
 To use this plugin, you have to add it to your project as a npm package. You can do this by running the following command in your project's root directory:
 
 ```
-npm i @grnet/docusaurus-terminology --save
-```
-
-or
-
-```
-yarn add @grnet/docusaurus-terminology
+npm i git+https://github.com/b-kamphorst/docusaurus-terminology --save
 ```
 
 Once the package is installed, you need to configure it in your Docusaurus site configuration file by adding the plugin to your `docusaurus.config.js` file:
 
-```
+```js
 module.exports = {
     ...
   plugins: [
-    ['@grnet/docusaurus-terminology', {
+    ['@b-kamphorst/docusaurus-terminology', {
       termsDir: './docs/terms',
       docsDir: './docs/',
-      glossaryFilepath: './docs/glossary.md'
+      glossaryFilepath: './docs/glossary.md',
+      routeBasePath: './docs' // optional, defaults to docsDir
     }],
   ],
     ...
 };
 ```
 
-There is the ability to use custom components for the glossary file and term preview tooltip, instead of using the ones provided by `@grnet/docusaurus-term-preview` and `@grnet/docusaurus-glossary-view`.
+Here, the value for `routeBasePath` should equal the value in the `presets:docs:routeBasePath` configuration if that is supplied manually.
+
+There is the ability to use custom components for the glossary file and term preview tooltip, instead of using the ones provided by `@b-kamphorst/docusaurus-term-preview` and `@b-kamphorst/docusaurus-glossary-view`.
 
 To modify the default options, add the fields `glossaryComponentPath`, `termPreviewComponentPath` in the plugins section to provide the corresponding component paths (**relative to the `/docs` folder**):
 
-```
+```js
 plugins: [
-    ['@grnet/docusaurus-terminology', {
+    ['@b-kamphorst/docusaurus-terminology', {
       ...
       glossaryComponentPath: 'relative/path/to/your/component',
       termPreviewComponentPath: 'relative/path/to/your/component',
@@ -87,9 +82,10 @@ To include the desired term in a documentation page, you can add the markdown sy
 This renders the hyperlink "This is the example-term", and displays the "hoverText" attribute when you hover it.
 
 ## How it works
+
 This plugin retrieves docs in two ways:
 
-1. Parses all `*.md` and `*.mdx` files in the `docs/` directory and replaces each pattern `[term](path/to/term.md)` (markdown syntax for a hyperlink) with a `<a>` tag supporting tooltip functionality using the [@grnet/term-preview](https://www.npmjs.com/package/@grnet/docusaurus-term-preview) package that uses the [rc-tooltip](https://www.npmjs.com/package/rc-tooltip) under the hood.
+1. Parses all `*.md` and `*.mdx` files in the `docs/` directory and replaces each pattern `[term](path/to/term.md)` (markdown syntax for a hyperlink) with a `<a>` tag supporting tooltip functionality using the [@b-kamphorst/term-preview](https://www.npmjs.com/package/@b-kamphorst/docusaurus-term-preview) package that uses the [rc-tooltip](https://www.npmjs.com/package/rc-tooltip) under the hood.
 2. Creates a glossary with all the terms from markdown files that are listed in the `docs/terms/`.
 
 In greater depth:
@@ -112,11 +108,11 @@ Example body
 
 where:
 
-* `id`: the unique id of the docusaurus web page, this is docusaurus specific
+- `id`: the unique id of the docusaurus web page, this is docusaurus specific
 
-* `title`: the visible title of the term, docusaurus specific as well
+- `title`: the visible title of the term, docusaurus specific as well
 
-* `hoverText`: this text shows when you hover over a term in a documentation page
+- `hoverText`: this text shows when you hover over a term in a documentation page
 
 You can add your own content under the markdown metadata header.
 
@@ -126,16 +122,24 @@ The plugin creates a glossary that aggregates all of the terms from the `docs/te
 
 ## Troubleshooting
 
-If you encounter any issues with the @grnet/docusaurus-terminology plugin, please check the following:
-* Ensure that you have installed it correctly and added it to your site configuration file.
-* Make sure that you add/edit markdown files under the `/docs/terms` directory and the hyperlink pattern `[term](path/to/term.md)` you are using to define the term is correct. Both the term's id and filename must match.
-* If you are still encountering issues, please submit a bug report or contact the plugin maintainer for support.
+If you encounter any issues with the @b-kamphorst/docusaurus-terminology plugin, please check the following:
+
+- Ensure that you have installed it correctly and added it to your site configuration file.
+- Make sure that you add/edit markdown files under the `/docs/terms` directory and the hyperlink pattern `[term](path/to/term.md)` you are using to define the term is correct. Both the term's id and filename must match.
+- If you are still encountering issues, please submit a bug report or contact the plugin maintainer for support.
 
 ## Contributing
 
-If you would like to contribute to the development of the @grnet/docusaurus-terminology plugin, you can do so by submitting issues or pull requests on the GitHub repository.
+If you would like to contribute to the development of the @b-kamphorst/docusaurus-terminology plugin, you can do so by submitting issues or pull requests on the GitHub repository.
+
+To develop and test locally, run
+
+`rush update`
+
+and
+
+`rush build`
 
 ## License
 
-The @grnet/docusaurus-terminology plugin is released under the BSD-2-Clause.
-
+The @b-kamphorst/docusaurus-terminology plugin is released under the BSD-2-Clause.

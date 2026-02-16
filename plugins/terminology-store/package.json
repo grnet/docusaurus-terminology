@@ -1,9 +1,9 @@
 {
-  "name": "@grnet/terminology-store",
+  "name": "@b-kamphorst/terminology-store",
   "version": "2.0.0-rc.2",
   "description": "Terminology store for webpack loader & other plugins",
   "main": "index.js",
-  "author": "GRNET Developers <devs@lists.grnet.gr>",
+  "author": "b-kamphorst Developers <devs@lists.b-kamphorst.gr>",
   "license": "BSD-2-Clause",
   "private": false,
   "scripts": {
