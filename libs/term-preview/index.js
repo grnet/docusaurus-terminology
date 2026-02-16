@@ -49,7 +49,6 @@ const Content = React.forwardRef(({ setContent, content, url, theme }, ref) => {
 const Tooltip = (props) => {
   const { children, pathName } = props;
   const [content, setContent] = useState();
-  const cleanPathname = pathName.replace(/\/$/, "");
 
   return (
     <BrowserOnly
@@ -60,7 +59,7 @@ const Tooltip = (props) => {
           placement="top"
           overlay={
             <Content
-              url={cleanPathname}
+              url={pathName}
               content={content}
               setContent={setContent}
               theme="white"

@@ -8,7 +8,7 @@ function sanitize(p) {
   const p_unix = p.replace(/^\.\//, "").replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
   const p_win = p
     .replace(/\//g, "\\")
-    .replace(/\./, "")
+    .replace(/^\.\\/, "")
     .replace(/[*+?^${}()|[\]\\]/g, "\\$&");
   return process.platform === "win32" ? p_win : p_unix;
 }
@@ -55,7 +55,7 @@ module.exports = function (source) {
 
           const routeBasePath =
             "/" + sanitize(this.query.routeBasePath || this.query.docsDir);
-          const targetPathName = path.posix.join(
+          const targetPathName = path.join(
             routeBasePath,
             pathRelativeToDocsDir,
           );

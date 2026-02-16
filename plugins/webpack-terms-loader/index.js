@@ -8,7 +8,7 @@ function sanitize(p) {
   const p_unix = p.replace(/^\.\//, "").replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
   const p_win = p
     .replace(/\//g, "\\")
-    .replace(/\./, "")
+    .replace(/^\.\\/, "")
     .replace(/[*+?^${}()|[\]\\]/g, "\\$&");
   return process.platform === "win32" ? p_win : p_unix;
 }
@@ -31,10 +31,11 @@ module.exports = function (source) {
     const routeBasePath = sanitize(
       this.query.routeBasePath || this.query.docsDir,
     );
-    const targetPath = path.posix.join(
-      routeBasePath,
-      resourcePathRelativeToDocsDir,
-    );
+
+    // Ensure targetPath is posix style (URL style)
+    const targetPath = path
+      .join(routeBasePath, resourcePathRelativeToDocsDir)
+      .replace(/\\/g, "/");
 
     const data = parseMD(source);
     data.metadata.hoverText = data.metadata.hoverText

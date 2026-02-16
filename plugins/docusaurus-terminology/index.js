@@ -1,13 +1,12 @@
 const fs = require("fs");
-const path = require("path");
-module.exports = function (context, options) {
+module.exports = function (_context, options) {
   const unixFormattedTermsPath = options.termsDir
     .replace(/^\.\//, "")
     .replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 
   const winFormattedTermsPath = options.termsDir
     .replace(/\//g, "\\")
-    .replace(/\./, "")
+    .replace(/^\.\\/, "")
     .replace(/[*+?^${}()|[\]\\]/g, "\\$&");
 
   const termsPath =
@@ -22,7 +21,7 @@ module.exports = function (context, options) {
 
   const winFormattedGlossaryPath = options.glossaryFilepath
     .replace(/\//g, "\\")
-    .replace(/\./, "")
+    .replace(/^.\\/, "")
     .replace(/[*+?^${}()|[\]\\]/g, "\\$&");
 
   const glossaryPath =
@@ -36,7 +35,7 @@ module.exports = function (context, options) {
   } catch (err) {}
   return {
     name: "terminology-docusaurus-plugin",
-    configureWebpack(config, isServer, utils) {
+    configureWebpack(config) {
       options.baseUrl = config.output.publicPath;
       // prefix baseUrl in options.glossaryTerms
       if (!options.resolved) {

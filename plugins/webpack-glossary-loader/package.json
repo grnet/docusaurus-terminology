@@ -7,8 +7,7 @@
   "license": "BSD-2-Clause",
   "private": false,
   "dependencies": {
-    "@b-kamphorst/terminology-store": "2.0.0-rc.2",
-    "parse-md": "2.0.4"
+    "@b-kamphorst/terminology-store": "2.0.0-rc.2"
   },
   "scripts": {
     "build": "echo 'no build is required'"
