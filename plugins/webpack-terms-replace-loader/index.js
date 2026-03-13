@@ -14,7 +14,9 @@ import Term from "${ this.query.termPreviewComponentPath || "@grnet/docusaurus-t
   `;
   if (urls.length > 0) {
     const { content } = parseMD(source);
-    source = source.replace(content, importStatement + content);
+    if(source.indexOf(importStatement) === -1) {
+      source = source.replace(content, importStatement + content);
+    }
     for (const url of urls) {
       const [mdUrl, title, urlPath] = url.match(urlRegex);
       const newLineRegex = /\n/g;
