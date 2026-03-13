@@ -1,0 +1,24 @@
+{
+  "id": "terms/example-term",
+  "title": "Example term",
+  "description": "This is a more detailed explanation for the term. The hoverText metadata provides a preview of the examplanation.",
+  "source": "@site/docs/terms/example-term.mdx",
+  "sourceDirName": "terms",
+  "slug": "/terms/example-term",
+  "permalink": "/docs/terms/example-term",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/terms/example-term.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "example-term",
+    "title": "Example term",
+    "hoverText": "This is an example term"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Translate your site",
+    "permalink": "/docs/tutorial-extras/translate-your-site"
+  }
+}

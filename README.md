@@ -1,14 +1,20 @@
 # @grnet/docusaurus-terminology
 
+> **⚠️ Deprecation Notice**
+>
+> This project is deprecated in favor of [rspress-plugin-terminology](https://github.com/grnet/rspress-plugin-terminology).
+>
+> We're migrating to rspress for better performance with large documentation sites and a more flexible plugin system.
+>
+> _This package will NOT be supported anymore, so don't expect to receive any security updates._
+
 ## Overview
 
 This Docusaurus plugin allows you to use standout terms in your pages, which, when hovered over, displays a short explanation, and when clicked, navigates you to the relevant page. The plugin parses all `*.md` and `*.mdx` files and replaces each markdown hyperlink pattern with a `<a>` HTML tag supporting a tooltip functionality. Additionally, it generates a glossary with all terms found in the markdown files.
 
 ![Term in text example](static/img/terminology_example.gif)
 
-
 Check for live example in [codesandbox](https://codesandbox.io/p/sandbox/sharp-sara-jh675w)
-
 
 ## Installation
 
@@ -87,6 +93,7 @@ To include the desired term in a documentation page, you can add the markdown sy
 This renders the hyperlink "This is the example-term", and displays the "hoverText" attribute when you hover it.
 
 ## How it works
+
 This plugin retrieves docs in two ways:
 
 1. Parses all `*.md` and `*.mdx` files in the `docs/` directory and replaces each pattern `[term](path/to/term.md)` (markdown syntax for a hyperlink) with a `<a>` tag supporting tooltip functionality using the [@grnet/term-preview](https://www.npmjs.com/package/@grnet/docusaurus-term-preview) package that uses the [rc-tooltip](https://www.npmjs.com/package/rc-tooltip) under the hood.
@@ -112,11 +119,11 @@ Example body
 
 where:
 
-* `id`: the unique id of the docusaurus web page, this is docusaurus specific
+- `id`: the unique id of the docusaurus web page, this is docusaurus specific
 
-* `title`: the visible title of the term, docusaurus specific as well
+- `title`: the visible title of the term, docusaurus specific as well
 
-* `hoverText`: this text shows when you hover over a term in a documentation page
+- `hoverText`: this text shows when you hover over a term in a documentation page
 
 You can add your own content under the markdown metadata header.
 
@@ -127,9 +134,10 @@ The plugin creates a glossary that aggregates all of the terms from the `docs/te
 ## Troubleshooting
 
 If you encounter any issues with the @grnet/docusaurus-terminology plugin, please check the following:
-* Ensure that you have installed it correctly and added it to your site configuration file.
-* Make sure that you add/edit markdown files under the `/docs/terms` directory and the hyperlink pattern `[term](path/to/term.md)` you are using to define the term is correct. Both the term's id and filename must match.
-* If you are still encountering issues, please submit a bug report or contact the plugin maintainer for support.
+
+- Ensure that you have installed it correctly and added it to your site configuration file.
+- Make sure that you add/edit markdown files under the `/docs/terms` directory and the hyperlink pattern `[term](path/to/term.md)` you are using to define the term is correct. Both the term's id and filename must match.
+- If you are still encountering issues, please submit a bug report or contact the plugin maintainer for support.
 
 ## Contributing
 
@@ -138,4 +146,3 @@ If you would like to contribute to the development of the @grnet/docusaurus-term
 ## License
 
 The @grnet/docusaurus-terminology plugin is released under the BSD-2-Clause.
-
