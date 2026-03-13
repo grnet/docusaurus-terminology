@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
 import BrowserOnly from "@docusaurus/BrowserOnly";
-import RcTooltip from "rc-tooltip";
-import "rc-tooltip/assets/bootstrap_white.css";
+import RcTooltip from "@rc-component/tooltip";
+import "@rc-component/tooltip/assets/bootstrap_white.css";
+import React, { useEffect, useState } from "react";
 import "./tooltip-styles.css";
 
 const link = {
@@ -35,7 +35,9 @@ const Content = React.forwardRef(({ setContent, content, url, theme }, ref) => {
       {content ? (
         <>
           <h4>{content.metadata.title}</h4>
-          <div dangerouslySetInnerHTML={{ __html: content.metadata.hoverText }}></div>
+          <div
+            dangerouslySetInnerHTML={{ __html: content.metadata.hoverText }}
+          ></div>
         </>
       ) : (
         "loading..."
